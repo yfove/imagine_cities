@@ -1,6 +1,112 @@
-<html>
-    <body>
-        <p>hi there</p>
-        <p>it works!</p>
-    </body>
-</html>
+{% extends 'page/base.html' %}
+
+{% block content %}
+<!-- homepage -->
+<main class="home">
+    <!-- main banner -->
+    <div class="main-banner">
+        <div class="main-banner-text box">
+            <h3>We Are All City Builders</h3>
+            <h4>Join an Unstoppable Community</h4>
+            <button type="button">Learn More</button>
+        </div>
+    </div>
+    <!-- featured posts -->
+    <section class="featured-posts">
+        <div class="wrapper">
+            <h2>Featured Posts</h2>
+            <ul>
+                <li class="post box">
+                    <div class="overlay-container">
+                        <img src="" alt="">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Research Repository</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi eveniet esse beatae sunt
+                            nobis repellendus eligendi adipisci veniam dicta! Facere rem nulla aspernatur facilis aut
+                            vero, beatae fugit libero quam dolorem repudiandae dolores consequatur saepe quaerat amet,
+                            fugiat modi dicta.</p>
+                    </div>
+                </li>
+                <li class="post box">
+                    <div class="overlay-container">
+                        <img src="" alt="">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Research Repository</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi eveniet esse beatae sunt
+                            nobis repellendus eligendi adipisci veniam dicta! Facere rem nulla aspernatur facilis aut
+                            vero, beatae fugit libero quam dolorem repudiandae dolores consequatur saepe quaerat amet,
+                            fugiat modi dicta.</p>
+                    </div>
+                </li>
+                <li class="post box">
+                    <div class="overlay-container">
+                        <img src="" alt="">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Research Repository</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi eveniet esse beatae sunt
+                            nobis repellendus eligendi adipisci veniam dicta! Facere rem nulla aspernatur facilis aut
+                            vero, beatae fugit libero quam dolorem repudiandae dolores consequatur saepe quaerat amet,
+                            fugiat modi dicta.</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="css-carousel">
+
+                <!-- carousel controls -->
+                <input type="radio" name="carousel" id="carousel-1" checked />
+                <input type="radio" name="carousel" id="carousel-1" />
+                <input type="radio" name="carousel" id="carousel-1" />
+            </div>
+
+            <!-- carousel navigation -->
+            <div class="carousel-nav">
+                <label for="carousel-1"></label>
+                <label for="carousel-2"></label>
+                <label for="carousel-3"></label>
+            </div>
+
+            <!-- carousel slides -->
+            <div class="carousel-slides">
+                <div class="carousel-inner">
+                    <div class="carousel-item">slide1</div>
+                    <div class="carousel-item">slide2</div>
+                    <div class="carousel-item">slide3</div>
+                </div>
+            </div>
+        </div><!-- wrapper end -->
+    </section><!-- featured posts end -->
+    <section class="quote">
+        <div class="wrapper">
+            <h4>informing the public, inspiring action</h4>
+        </div>
+    </section>
+    <section class="newsletter">
+        <h2>Join Our Community</h2>
+        <div class="wrapper">
+            <h2>Sign Up For Our Newsletter</h2>
+            <div class="subscribe">
+                <form action="#">
+                    <input type="text">
+                    <input type="text">
+                </form>
+            </div>
+            <div class="post box">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</main>
+{% endblock %}

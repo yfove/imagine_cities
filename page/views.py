@@ -15,3 +15,6 @@ def get_involved(request):
 
 def contact_us(request):
     return render (request, 'page/contactus.html', {})
+
+def our_team(request):
+    return render (request, 'page/ourteam.html', {})
