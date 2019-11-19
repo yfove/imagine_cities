@@ -3,44 +3,46 @@
 <!-- begin -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Imagine Cities</title>
     <!-- load favicon -->
-	<!-- load font awesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-	<!-- load google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400i|Raleway:400,700,900" rel="stylesheet">
+    <!-- load font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+        integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <!-- load google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400i|Raleway:400,700,900" rel="stylesheet">
     <!-- link to style sheets -->
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
-    <!-- header -->
-    <header class="header">
-        <div class="wrapper clearfix">
-            <!-- top nav bar -->
-            <div class="top-nav-flex">
-                <a href="{% url 'home' %}"><img src="{% static 'img/i.png' %}" alt="logo" /></a>
-                <!-- <img src="static/images/i.png" alt="" class="logo"> -->
-                <!-- hamburger menu for mobile -->
-                <div class="hamburger-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <nav class="nav">
-                    <ul class="top-nav">
-                        <li><a href="{% url 'home' %}">Home</a></li>
-                        <li><a href="{% url 'about' %}">About</a></li>
-                        <li><a href="{% url 'ourwork' %}">Our Work</a></li>
-                        <li><a href="{% url 'getinvolved' %}">Get Involved</a></li>
-                        <li><a href="{% url 'contactus' %}">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div><!-- top nav flex end -->
-        </div><!-- wrapper end -->
-    </header>
+<!-- header -->
+<header class="header">
+    <div class="clearfix">
+        <!-- top nav bar -->
+        <div class="top-nav-flex">
+            <a href="{% url 'home' %}"><img src="{% static 'img/i.png' %}" alt="logo" /></a>
+            <!-- hamburger menu for mobile -->
+            <div class="hamburger-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav">
+                <ul class="top-nav">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'ourwork' %}">Our Work</a></li>
+                    <li><a href="{% url 'getinvolved' %}">Get Involved</a></li>
+                    <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div><!-- top nav flex end -->
+    </div><!-- wrapper end -->
+</header>
+
 <body>
     {% block content %}
     {% endblock %}
@@ -53,11 +55,9 @@
         <div class="wrapper">
             <!-- footer grid main -->
             <div class="footer-grid-main">
-                <div class="footer-desc">
-                    <h3>Footer</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, omnis nostrum illo at eius harum excepturi dignissimos repellendus laudantium minima?</p>
+                <div class="logo">
+                    <a href="{% url 'home' %}"><img src="{% static 'img/white_logo.png' %}" alt="logo" /></a>
                 </div>
-
                 <nav class="footer-nav">
                     <ul class="bottom-nav">
                         <li><a href="{% url 'home' %}">Home</a></li>
@@ -67,10 +67,14 @@
                         <li><a href="{% url 'contactus' %}">Contact Us</a></li>
                     </ul>
                 </nav>
+                <div class="footer-desc">
+                    <h3>Footer</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore consectetur officia, dicta quia ducimus velit labore quaerat perspiciatis cum. Reprehenderit deleniti ullam, sequi saepe eligendi impedit consectetur dolor rem, eaque architecto facilis! Rem omnis, eligendi dolorum totam fugit facere qui in veritatis quia fuga explicabo necessitatibus minus praesentium non unde.</p>
+                </div>
                 <div class="icons">
-                        <a href="https://twitter.com"><i class="fab fa-twitter icon"></i></a>
-                        <a href="https://www.instagram.com"><i class="fab fa-instagram icon"></i></a>
-                        <a href="https://www.facebook.com"><i class="fab fa-facebook-f icon"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter icon"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram icon"></i></a>
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f icon"></i></a>
                 </div>
                 <div class="copyright">
                     <p class="copyright-text">&copy; 2019 Imagine Cities</p>
@@ -80,4 +84,5 @@
     </div><!-- footer main end -->
 
 </footer>
+
 </html>
