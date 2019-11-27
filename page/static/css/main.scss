@@ -9,7 +9,7 @@ $accent-colour: gray;
 
 
 *,
-*:before,
+*:befor,
 *:after {
 	box-sizing: inherit;
 }
@@ -27,8 +27,8 @@ body {
 }
 
 body {
-	// background-color: azure;
-	background-color: aquamarine;
+	background-color: azure;
+	// background-color: white;
 }
 
 .wrapper {
@@ -344,7 +344,7 @@ input[type=email] {
 /* mobile */
 @media only screen and (max-width: 640px) {
 	body {
-		background-color: black;
+		background-color: white;
 	}
 
 	.hamburger-toggle {

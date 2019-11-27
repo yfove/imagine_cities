@@ -19,7 +19,7 @@
 }
 
 .propellus-text {
-  background-color: grey;
+  background-color: black;
 }
 
 .bottom-img img {
@@ -32,7 +32,7 @@
 }
 
 *,
-*:before,
+*:befor,
 *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
@@ -52,7 +52,7 @@ body {
 }
 
 body {
-  background-color: aquamarine;
+  background-color: azure;
 }
 
 .wrapper {
@@ -371,7 +371,7 @@ input[type=email] {
 /* mobile */
 @media only screen and (max-width: 640px) {
   body {
-    background-color: black;
+    background-color: white;
   }
   .hamburger-toggle {
     display: block;
