@@ -395,6 +395,10 @@ template {
   box-sizing: border-box;
 }
 
+.post-content {
+  background: goldenrod;
+}
+
 *,
 *:before,
 *:after {
