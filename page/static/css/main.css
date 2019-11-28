@@ -25,8 +25,8 @@
 }
 
 .bottom-img img {
-  padding: 40px;
-  max-width: 65%;
+  padding: 0 35px 35px 35px;
+  max-width: 85%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -39,7 +39,7 @@
   display: -ms-grid;
   display: grid;
       grid-template-areas: "post1 post2" "post3 post2";
-  grid-gap: 1.2em;
+  grid-gap: 0em;
 }
 
 .box {
@@ -65,6 +65,10 @@
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: post3;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .post3 button {
@@ -73,17 +77,27 @@
   border-radius: 8px;
   padding: 20px 50px;
   color: white;
-  text-align: center;
   position: relative;
-  bottom: 50px;
-  left: 40px;
+  bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.post3 button:hover {
+  background-color: #13A7A5;
 }
 
 .post2 .propellus-text h3 {
-  line-height: 120%;
+  line-height: 130%;
   font-weight: 300;
   font-size: 1.3em;
-  padding: 30px;
+  padding: 40px;
+}
+
+.post2 .propellus-text h3:hover {
+  font-weight: 800;
+  color: gray;
 }
 
 .about-page .main-banner {
@@ -395,6 +409,27 @@ template {
   box-sizing: border-box;
 }
 
+.contact-us {
+  margin-bottom: 100px;
+  padding: 10%;
+}
+
+.contact-us h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 0 0 0 40;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.contact-us h2 {
+  font-size: 1.1em;
+}
+
+.contact-us .meet h2 {
+  color: #13A7A5;
+}
+
 *,
 *:before,
 *:after {
@@ -527,7 +562,8 @@ footer {
 }
 
 .main-banner {
-  min-height: 500px;
+  min-height: 550px;
+  max-width: 100%;
   background: white url(../img/1-b.jpeg);
   background-size: cover;
   background-position: center;
@@ -595,19 +631,6 @@ h4 {
 
 .quote {
   padding: 20px;
-}
-
-.contact-us {
-  padding: 100px;
-  margin-bottom: 100px;
-}
-
-.contact-us h1 {
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  padding: 0 0 0 40;
-  margin-bottom: 40px;
-  text-align: left;
 }
 
 .featured-posts {

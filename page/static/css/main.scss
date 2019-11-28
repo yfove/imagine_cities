@@ -1,6 +1,7 @@
 @import './join';
 @import './about';
 @import './setup';
+@import './contact';
 
 $primary-colour: #241F20;
 $primary-colour2: #F9AF42;
@@ -145,7 +146,8 @@ footer {
 // banner styles
 
 .main-banner {
-	min-height: 500px;
+	min-height: 550px;
+	max-width: 100%;
 	background: white url(../img/1-b.jpeg);
 	background-size: cover;
 	background-position: center;
@@ -205,19 +207,6 @@ h4 {
 
 .quote {
 	padding: 20px;
-}
-
-.contact-us {
-	padding: 100px;
-	margin-bottom: 100px;
-}
-
-.contact-us h1 {
-	font-size: 1.6rem;
-	text-transform: uppercase;
-	padding: 0 0 0 40;
-	margin-bottom: 40px;
-	text-align: left;
 }
 
 // main page

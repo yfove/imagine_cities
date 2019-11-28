@@ -1,0 +1,27 @@
+$primary-colour: #241F20;
+$primary-colour2: #F9AF42;
+$primary-colour3: #13A7A5;
+$primary-colour4: #149ED3;
+$text-color: #D8D7D6;
+$accent-colour: gray;
+
+.contact-us {
+    margin-bottom: 100px;
+    padding: 10%
+}
+
+.contact-us h1 {
+	font-size: 2rem;
+	text-transform: uppercase;
+	padding: 0 0 0 40;
+	margin-bottom: 40px;
+	text-align: left;
+}
+
+.contact-us h2 {
+    font-size: 1.1em;
+}
+
+.contact-us .meet h2 {
+    color: #13A7A5;;
+}
