@@ -1,4 +1,6 @@
 @import './join';
+@import './about';
+@import './setup';
 
 $primary-colour: #241F20;
 $primary-colour2: #F9AF42;
@@ -9,7 +11,7 @@ $accent-colour: gray;
 
 
 *,
-*:befor,
+*:before,
 *:after {
 	box-sizing: inherit;
 }
@@ -27,7 +29,7 @@ body {
 }
 
 body {
-	background-color: azure;
+	background-color: white;
 	// background-color: white;
 }
 
@@ -167,11 +169,6 @@ footer {
 	background-size: cover;
 }
 
-.about-page .main-banner {
-	background: white url(../img/1-f.jpeg);
-	background-size: cover;
-}
-
 .main-banner-text h3,
 h4 {
 	color: $primary-colour;
@@ -247,7 +244,7 @@ h4 {
 }
 
 .post {
-	background-color: #D8D7D6;
+	// background-color: #D8D7D6;
 	padding: 2em;
 
 }
@@ -329,17 +326,7 @@ input[type=email] {
 
 // about page
 
-.vision-banner .image-text{
 
-	background: white url(../img/1-b.jpeg);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	padding: 0px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 
 /* mobile */
 @media only screen and (max-width: 640px) {
