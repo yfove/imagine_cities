@@ -27,12 +27,11 @@ $accent-colour: gray;
 	background: white url(../img/1-c.jpeg);
     background-size: cover;
     max-width: 100%;
-    height: 500px;
 }
 
 .bottom-img img {
     padding: 0 35px 35px 35px;
-    max-width: 85%;
+    max-width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -67,19 +66,18 @@ $accent-colour: gray;
     grid-area: post3;
     align-items: center;
     text-align: center;
+    padding: 10px;
 }
 
 .post3 button {
     background-color: #F9AF42;
     border: none;
+    font-weight: 600;
     border-radius: 8px;
     padding: 20px 50px;
     color: white;
     // text-align: center;
-    position: relative;
-    bottom: 30px;
     text-transform: uppercase;
-    letter-spacing: 2px;
     cursor:pointer;
 }
 

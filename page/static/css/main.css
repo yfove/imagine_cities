@@ -21,12 +21,11 @@
   background: white url(../img/1-c.jpeg);
   background-size: cover;
   max-width: 100%;
-  height: 500px;
 }
 
 .bottom-img img {
   padding: 0 35px 35px 35px;
-  max-width: 85%;
+  max-width: 70%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -69,18 +68,17 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  padding: 10px;
 }
 
 .post3 button {
   background-color: #F9AF42;
   border: none;
+  font-weight: 600;
   border-radius: 8px;
   padding: 20px 50px;
   color: white;
-  position: relative;
-  bottom: 30px;
   text-transform: uppercase;
-  letter-spacing: 2px;
   cursor: pointer;
 }
 
@@ -98,6 +96,224 @@
 .post2 .propellus-text h3:hover {
   font-weight: 800;
   color: gray;
+}
+
+.main-banner {
+  min-height: 430px;
+  max-width: 100%;
+  background: white url(../img/1-b.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: -80px;
+  z-index: 1;
+}
+
+.our-work-page .main-banner {
+  background: white url(../img/1-d.jpeg);
+  background-size: cover;
+}
+
+.main-banner-text h3,
+h4 {
+  color: #241F20;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.main-banner-text h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.main-banner-text button {
+  background-color: #241F20;
+  color: white;
+  font-size: .8em;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  -webkit-box-pack: centre;
+      -ms-flex-pack: centre;
+          justify-content: centre;
+  position: relative;
+  z-index: 100;
+  top: 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+.learn-more button {
+  background-color: black;
+  cursor: pointer;
+}
+
+.learn-more button:hover {
+  background-color: orange;
+  border: 2px solid white;
+}
+
+.learn-more {
+  text-align: center;
+}
+
+.featured-posts {
+  padding: 20px;
+}
+
+.quote h4 {
+  padding: 20px;
+  color: gray;
+  font-size: 3.1em;
+  opacity: 50%;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.quote {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.featured-posts {
+  text-align: center;
+  display: block;
+  float: left;
+  position: relative;
+  top: -30px;
+}
+
+.featured-posts ul {
+  text-align: left;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3em;
+  padding: 15px 0;
+}
+
+.featured-posts h2 {
+  font-size: 1.3em;
+}
+
+.post-a .post-content {
+  background-color: #F9AF42;
+  padding: 2em;
+}
+
+.post-b .post-content {
+  background-color: #13A7A5;
+  padding: 2em;
+}
+
+.post-c .post-content {
+  background-color: #D8D7D6;
+  padding: 2em;
+}
+
+.post-content h3 {
+  padding-bottom: 15px;
+}
+
+.quote h4 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-top: 2em;
+}
+
+.newsletter-grid-main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  text-align: justify;
+  background-color: #D8D7D6;
+  margin: 1em;
+  margin-bottom: 80px;
+  padding: 0px;
+}
+
+.newsletter h3 {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+input[type=email] {
+  font-family: 'Noto Serif', serif;
+  color: grey;
+  padding: 7px 12px;
+  font-size: 0.8em;
+}
+
+.submit {
+  background-color: yellow;
+  color: #ddd;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 8px 12px;
+}
+
+.eventbrite {
+  background-color: #241F20;
+  padding: 5em;
+  margin: 0;
+}
+
+.eventbrite button {
+  background-color: #149ED3;
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 20px 50px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Styling placeholder font for email inputs*/
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari/ */
+  font-family: 'Noto Serif', serif;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: 'Noto Serif', serif;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: 'Noto Serif', serif;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: 'Noto Serif', serif;
+  font-size: 0.9em;
+  text-align: center;
 }
 
 .about-page .main-banner {
@@ -118,13 +334,13 @@
 }
 
 .text-box h2 {
-  font-size: 1.2em;
+  font-size: 1.0em;
 }
 
 .image-text h3 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 10px;
 }
 
 .vision-banner .image-text {
@@ -172,11 +388,16 @@
   top: 350px;
 }
 
+.ourwork-banner button:hover {
+  background-color: #F9AF42;
+  border: #D8D7D6 solid 2px;
+}
+
 .fact h3 {
   text-align: center;
   padding: 0 20px;
   color: #D8D7D6;
-  font-size: larger;
+  font-size: 1.5em;
 }
 
 .mission-text {
@@ -411,19 +632,18 @@ template {
 
 .contact-us {
   margin-bottom: 100px;
-  padding: 10%;
+  padding: 50px;
 }
 
 .contact-us h1 {
   font-size: 2rem;
   text-transform: uppercase;
-  padding: 0 0 0 40;
   margin-bottom: 40px;
   text-align: left;
 }
 
 .contact-us h2 {
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 .contact-us .meet h2 {
@@ -486,6 +706,8 @@ ul {
           justify-content: space-between;
   padding: 10px 20px;
   background-color: transparent;
+  position: relative;
+  z-index: 2;
 }
 
 .top-nav li {
@@ -557,185 +779,27 @@ footer {
   width: 28px;
   display: block;
   margin: 6px 0;
-  -webkit-transition: .5s;
-  transition: .5s;
 }
 
-.main-banner {
-  min-height: 550px;
-  max-width: 100%;
-  background: white url(../img/1-b.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  top: -80px;
-  z-index: -1;
-}
-
-.our-work-page .main-banner {
-  background: white url(../img/1-d.jpeg);
-  background-size: cover;
-}
-
-.join-page .main-banner {
-  background: white url(../img/1-c.jpeg);
-  background-size: cover;
-}
-
-.main-banner-text h3,
-h4 {
-  color: #241F20;
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-.main-banner-text h4 {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.main-banner-text button {
-  background-color: #241F20;
-  color: white;
-  font-size: .8em;
-  text-transform: uppercase;
-  padding: 15px 30px;
-  -webkit-box-pack: centre;
-      -ms-flex-pack: centre;
-          justify-content: centre;
-  position: relative;
-  top: 20px;
-  border: none;
-  border-radius: 10px;
-  font-weight: bolder;
-}
-
-.learn-more {
-  text-align: center;
-}
-
-.featured-posts {
-  padding: 20px;
-}
-
-.quote {
-  padding: 20px;
-}
-
-.featured-posts {
-  text-align: center;
-  display: block;
-  float: left;
-  position: relative;
-  top: -30px;
-}
-
-.featured-posts ul {
-  list-style: none;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 4em;
-  padding: 20px;
-}
-
-.featured-posts h2 {
-  font-size: 1.3em;
-}
-
-.post {
-  padding: 2em;
-}
-
-.quote h4 {
-  text-transform: uppercase;
-  font-weight: bolder;
-  margin-top: 2em;
-}
-
-.newsletter h3 {
-  text-align: center;
-  font-size: 1.2em;
-}
-
-.newsletter-grid-main {
-  background-color: #D8D7D6;
-  margin: 2em;
-  margin-bottom: 80px;
-}
-
-input[type=email] {
-  font-family: 'Noto Serif', serif;
-  color: grey;
-  padding: 7px 12px;
-  font-size: 0.8em;
-}
-
-.submit {
-  background-color: yellow;
-  color: #ddd;
-  text-transform: uppercase;
-  font-size: 0.8em;
-  letter-spacing: 1px;
-  margin: 0;
-  padding: 8px 12px;
-}
-
-.newsletter-grid-main {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
-  padding: 40px 0;
-  text-align: justify;
-}
-
-/* Styling placeholder font for email inputs*/
-::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari/ */
-  font-family: 'Noto Serif', serif;
-  font-size: 0.9em;
-  text-align: center;
-}
-
-::-moz-placeholder {
-  /* Firefox 19+ */
-  font-family: 'Noto Serif', serif;
-  font-size: 0.9em;
-  text-align: center;
-}
-
-:-ms-input-placeholder {
-  /* IE 10+ */
-  font-family: 'Noto Serif', serif;
-  font-size: 0.9em;
-  text-align: center;
-}
-
-:-moz-placeholder {
-  /* Firefox 18- */
-  font-family: 'Noto Serif', serif;
-  font-size: 0.9em;
-  text-align: center;
+/* mobile */
+@media only screen and (max-width: 900px) {
+  .featured-posts ul {
+    text-align: left;
+    list-style: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 4em;
+    padding: 60px;
+    min-height: 600px;
+  }
 }
 
 /* mobile */
 @media only screen and (max-width: 640px) {
   body {
-    background-color: white;
+    background-color: black;
   }
   .hamburger-toggle {
     display: block;
