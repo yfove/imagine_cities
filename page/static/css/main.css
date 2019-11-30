@@ -25,11 +25,17 @@
 
 .bottom-img img {
   padding: 0 35px 35px 35px;
-  max-width: 70%;
+  max-width: 75%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+}
+
+.bottom-img p {
+  color: #F9AF42;
+  position: relative;
+  top: -150px;
 }
 
 .blog-grid {
@@ -39,6 +45,7 @@
   display: grid;
       grid-template-areas: "post1 post2" "post3 post2";
   grid-gap: 0em;
+  padding: 20px;
 }
 
 .box {
@@ -58,6 +65,11 @@
   grid-area: post2;
   color: #8a8682;
   text-align: center;
+}
+
+.post2 span {
+  font-weight: 600;
+  color: darkgray;
 }
 
 .post3 {
@@ -84,6 +96,7 @@
 
 .post3 button:hover {
   background-color: #13A7A5;
+  border: #D8D7D6 solid 2px;
 }
 
 .post2 .propellus-text h3 {
@@ -319,7 +332,7 @@ input[type=email] {
 .about-page .main-banner {
   background: white url(../img/about1.jpeg);
   background-size: cover;
-  max-height: auto;
+  min-height: 350px;
 }
 
 .about-page .main-banner h3 {
@@ -346,13 +359,13 @@ input[type=email] {
 .vision-banner .image-text {
   background: white url(../img/about2.jpeg);
   background-size: cover;
-  padding: 12%;
+  padding: 14%;
 }
 
 .story-banner .image-text {
   background: white url(../img/about3.jpeg);
   background-size: cover;
-  padding: 12%;
+  padding: 14%;
 }
 
 .image-text h3 {
@@ -395,9 +408,9 @@ input[type=email] {
 
 .fact h3 {
   text-align: center;
-  padding: 0 20px;
+  padding: 0 40px;
   color: #D8D7D6;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .mission-text {
@@ -790,8 +803,8 @@ footer {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    grid-gap: 4em;
-    padding: 60px;
+    grid-gap: 3em;
+    padding: 20px;
     min-height: 600px;
   }
 }

@@ -72,8 +72,13 @@
                     </ul>
                 </nav>
                 <div class="footer-desc">
-                    <h3>Footer</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore consectetur officia, dicta quia ducimus velit labore quaerat perspiciatis cum. Reprehenderit deleniti ullam, sequi saepe eligendi impedit consectetur dolor rem, eaque architecto facilis! Rem omnis, eligendi dolorum totam fugit facere qui in veritatis quia fuga explicabo necessitatibus minus praesentium non unde.</p>
+                    <div class="subscribe_form">
+                        <p>Sign up for our newsletter to get latest updates</p>
+                        <form id="subscribe" form method='POST'>{% csrf_token %}
+                            <input id="email_id" type="email" name="email_id" placeholder="your@email.com">
+                            <button type="submit" value="Subscribe" id="email_submit">Subscribe</button>
+                        </form>
+                    </div>
                 </div>
                 <div class="icons">
                     <a href="https://twitter.com"><i class="fab fa-twitter icon"></i></a>

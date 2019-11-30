@@ -1,8 +1,9 @@
-@import './join';
+@import './getinvolved';
 @import './home';
 @import './about';
 @import './setup';
 @import './contact';
+@import './ourwork';
 
 $primary-colour: #241F20;
 $primary-colour2: #F9AF42;
@@ -156,8 +157,8 @@ footer {
 		list-style: none;
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-gap: 4em;
-		padding: 60px;
+		grid-gap: 3em;
+		padding: 20px;
 		min-height: 600px;
 
 }
