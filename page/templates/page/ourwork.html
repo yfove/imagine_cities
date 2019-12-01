@@ -1,4 +1,5 @@
 {% extends 'page/base.html' %}
+{% load staticfiles %}
 
 {% block content %}
 <main class="our-work-page">
@@ -9,15 +10,24 @@
         </div>
     </div>
     <section class="research-repo">
-        <div class="pocket-img">
-            <img src="" alt="">
-        </div>
-        <div class="repo-text">
-            <h3>Research Repository</h3>
-            <p>We collect and share city building research from across the world. We follow a wide range of research
-                organizations, collect interdisciplinary research across 22 different categories, and share the research
-                on social media platforms</p>
-        </div>
+        <ul>
+            <li>
+                <div class="pocket">
+                    <a href="https://getpocket.com/@imaginecities"><img src="{% static 'img/p1.png' %}" alt="logo" /></a>
+                </div>
+            </li>
+            <li>
+                <div class="repo-text">
+                    <h3>Research Repository</h3>
+                    <p>We Collect and share city building research from across the world. We follow a wide range of
+                        research
+                        organizations, collect interdisciplinary research across 22 different categories, and share the
+                        research
+                        on social media platforms
+                    </p>
+                </div>
+            </li>
+        </ul>
     </section>
     <!-- featured posts -->
     <section class="featured-posts">
@@ -30,11 +40,8 @@
                         <div class="overlay"></div>
                     </div>
                     <div class="post-content">
-                        <h3>Research Repository</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi eveniet esse beatae sunt
-                            nobis repellendus eligendi adipisci veniam dicta! Facere rem nulla aspernatur facilis aut
-                            vero, beatae fugit libero quam dolorem repudiandae dolores consequatur saepe quaerat amet,
-                            fugiat modi dicta.</p>
+                        <h3>Year In Review</h3>
+                        <p>The Year in Review highlights the best of the best. We pull together the most innovative and unique pieces of research that are solving city problems from our research repository using a defined criteria. To explore this annual collection follow us on Instragram @imaginecities.</p>
                     </div>
                 </li>
                 <li class="post-b box">
@@ -43,11 +50,8 @@
                         <div class="overlay"></div>
                     </div>
                     <div class="post-content">
-                        <h3>Research Repository</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi eveniet esse beatae sunt
-                            nobis repellendus eligendi adipisci veniam dicta! Facere rem nulla aspernatur facilis aut
-                            vero, beatae fugit libero quam dolorem repudiandae dolores consequatur saepe quaerat amet,
-                            fugiat modi dicta.</p>
+                        <h3>Speaker Series</h3>
+                        <p>Our community of engaged citizens includes many inspiring and creative innovators who challenge the status quo in an effort to build better cities. Our speaker series allows all of us to learn more about city building, celebrate impact and consider how we can each contribute to our city. Sign up for our newsletter to stay looped</p>
                     </div>
                 </li>
                 <li class="post-c box">
@@ -56,11 +60,8 @@
                         <div class="overlay"></div>
                     </div>
                     <div class="post-content">
-                        <h3>Research Repository</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi eveniet esse beatae sunt
-                            nobis repellendus eligendi adipisci veniam dicta! Facere rem nulla aspernatur facilis aut
-                            vero, beatae fugit libero quam dolorem repudiandae dolores consequatur saepe quaerat amet,
-                            fugiat modi dicta.</p>
+                        <h3>Short Stories</h3>
+                        <p>Throughout the year we curate and show collections of short films from our research repository that highlight interesting perspectives about city building. The topics we choose aim to align with the most important urban issues of the moment, spark discussion, and connect city-builders. Join us at our next event to view, connect and converse.</p>
                     </div>
                 </li>
             </ul>
@@ -79,20 +80,9 @@
                 <label for="carousel-3"></label>
             </div>
 
-            <!-- carousel slides -->
-            <div class="carousel-slides">
-                <div class="carousel-inner">
-                    <div class="carousel-item">slide1</div>
-                    <div class="carousel-item">slide2</div>
-                    <div class="carousel-item">slide3</div>
-                </div>
-            </div>
+
         </div><!-- wrapper end -->
     </section><!-- featured posts end -->
 </main>
-<h1>Programs and Projects</h1>
-<!-- javascript & jquery -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<h1>.</h1>
 {% endblock %}

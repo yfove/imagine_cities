@@ -4,6 +4,7 @@
 @import './setup';
 @import './contact';
 @import './ourwork';
+@import './ourteam';
 
 $primary-colour: #241F20;
 $primary-colour2: #F9AF42;
@@ -26,9 +27,17 @@ $accent-colour: gray;
 
 html,
 body {
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
 	max-height: 100%;
 	box-sizing: border-box;
-	font-family: Proxima Nova, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -50,7 +59,7 @@ ul {
 	// margin: 0;
 	// padding: 0;
 	font-size: small;
-	font-family: Arial, Helvetica, sans-serif
+	font-family: 'Montserrat', sans-serif;
 }
 
 ul {
@@ -74,19 +83,59 @@ ul {
 	line-height: 35px;
 }
 
+.top-nav li a:hover {
+	color: #D8D7D6;
+}
+
 .top-nav li a {
 	display: block;
-	font-size: 0.8em;
+	font-size: 10px;
 	color: black;
-	font-weight: 550;
 	padding-right: 15px;
 	text-transform: uppercase;
 	text-decoration: none;
+	font-weight: bolder;
 }
 
 .top-nav-flex img {
 	max-width: 100%;
 	height: 40px;
+}
+
+// hamburger toggle
+
+.hamburger-toggle {
+	float: right;
+	display: none;
+	cursor: pointer;
+}
+
+.hamburger-toggle span {
+	background: black;
+	height: 2px;
+	width: 28px;
+	display: block;
+	margin: 6px 0;
+	-webkit-transition: .5s;
+	transition: .5s
+}
+
+.hamburger-toggle.x-toggle span:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger-toggle.x-toggle span:nth-child(1) {
+	-webkit-transform: rotate(45deg);
+	transform-origin: 5px 9px;
+	-webkit-transform: rotate(45deg);
+	transform-origin: 5px 9px;
+}
+
+.hamburger-toggle.x-toggle span:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	transform-origin: 8px -7px;
+	-webkit-transform: rotate(-45deg);
+	transform-origin: 8px -7px;
 }
 
 // footer
@@ -120,10 +169,47 @@ footer {
 	text-transform: uppercase;
 }
 
+.footer-nav a:hover {
+	color: #F9AF42;
+}
+
 .footer-nav li {
 	text-align: left;
 	margin-top: 10px;
 	margin-left: 20px;
+}
+
+.footer-desc input {
+	margin-top: 15px;
+	padding: 8px 15px;
+	border: none;
+}
+
+.footer-desc button {
+	padding: 8px 50px;
+	margin-top: 10px;
+	background-color: #F9AF42;
+	;
+	color: white;
+	border: none;
+	font-weight: bold;
+}
+
+.copyright p {
+	float: right;
+	position: relative;
+	left: 190px;
+	top: 30px;
+	color: #F6F7F9;
+}
+
+.icons {
+	letter-spacing: 2px;
+	font-size: 1.3em;
+}
+
+.icons a:hover{
+	color: #F9AF42;
 }
 
 
@@ -149,7 +235,7 @@ footer {
 // about page
 
 
-/* mobile */
+/*  */
 @media only screen and (max-width: 900px) {
 
 	.featured-posts ul {
@@ -158,25 +244,70 @@ footer {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-gap: 3em;
-		padding: 20px;
+		padding: px;
 		min-height: 600px;
 
-}
+	}
+
+	.newsletter-grid-main {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 30px;
+		text-align: justify;
+		margin: 1em;
+		margin-bottom: 80px;
+		padding: 0px;
+	}
+
+	.post-content {
+		height: 200px;
+		max-height: 300px;
+		min-width: 1.3em;
+		border-radius: 5px;
+	}
+
+
+	.blog-grid {
+		margin: 60px;
+		grid-area: blog;
+		display: grid;
+		grid-template-areas:
+			"post1 "
+			"post3"
+			"post2";
+		grid-gap: 0em;
+		padding: 20px;
+	}
+
+	.post1 .propellus-logo {
+		max-width: 60%;
+		height: auto;
+		padding-bottom: 10px;
+		margin: 0 20%;
+	}
+
+	.main-banner-text h3 {
+		margin: 0 50%;
+	}
+
+
+
 
 }
+
 
 /* mobile */
 @media only screen and (max-width: 640px) {
 	body {
-		background-color: black;
+		background-color: whitesmoke;
 	}
 
 	.hamburger-toggle {
-		display: block;
-		position: relative;
-		z-index: 2;
-		padding: 10px 0;
-	}
+        display: block;
+        position: relative;
+        z-index: 1000;
+        padding: 10px 0;
+    }
 
 	.nav {
 		text-align: center;
@@ -205,6 +336,22 @@ footer {
 	}
 
 	.nav ul li a {
+		padding: 2px;
+		font-size: 1em;
+		position: relative;
+		top: 200px;
+	}
+
+	.nav ul li a:hover {
+		background-color: #fff;
+	}
+
+	// .nav ul li {
+	// 	display: block;
+	// 	line-height: 0px;
+	// }
+
+	.nav ul li a {
 		padding: 0;
 		font-size: 1em;
 	}
@@ -213,7 +360,30 @@ footer {
 		background-color: #fff;
 	}
 
+	.main-banner h4 {
+		margin: 0 20%;
+	}
+
+	.ourwork-banner a{
+		position: relative;
+		top: 60px;
+		right: 100px;
+	}
+
 	.featured-posts ul {
 		grid-template-columns: 1fr;
+	}
+
+	.footer-grid-main {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.footer-grid-main .footer-desc {
+		margin: 15px;
+	}
+
+	.footer-grid-main li {
+		text-align: center;
 	}
 }

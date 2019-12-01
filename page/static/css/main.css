@@ -114,7 +114,7 @@
 .main-banner {
   min-height: 430px;
   max-width: 100%;
-  background: white url(../img/1-b.jpeg);
+  background: white url(../img/about.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -133,21 +133,29 @@
   z-index: 1;
 }
 
-.our-work-page .main-banner {
-  background: white url(../img/1-d.jpeg);
-  background-size: cover;
-}
-
 .main-banner-text h3,
 h4 {
   color: #241F20;
   font-size: 2.5rem;
   text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: 5px;
+  font-family: 'Kalam', cursive;
+}
+
+.home .main-banner-text h3, h4 {
+  -webkit-animation: fadein 5s;
+  /* Safari, Chrome and Opera > 12.1 */
+  /* Firefox < 16 */
+  /* Internet Explorer */
+  /* Opera < 12.1 */
+  animation: fadein 5s;
 }
 
 .main-banner-text h4 {
   font-size: 1.1rem;
-  font-weight: 400;
+  font-weight: 800;
 }
 
 .main-banner-text button {
@@ -165,6 +173,7 @@ h4 {
   border: none;
   border-radius: 10px;
   font-weight: bolder;
+  letter-spacing: 2px;
 }
 
 .learn-more button {
@@ -174,7 +183,6 @@ h4 {
 
 .learn-more button:hover {
   background-color: orange;
-  border: 2px solid white;
 }
 
 .learn-more {
@@ -189,7 +197,7 @@ h4 {
   padding: 20px;
   color: gray;
   font-size: 3.1em;
-  opacity: 50%;
+  opacity: 80%;
   text-align: center;
   padding-bottom: 40px;
 }
@@ -198,6 +206,10 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.quote a {
+  text-decoration: none;
 }
 
 .featured-posts {
@@ -215,12 +227,13 @@ h4 {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 3em;
+  grid-gap: 2em;
   padding: 15px 0;
+  border-radius: px;
 }
 
 .featured-posts h2 {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .post-a .post-content {
@@ -238,14 +251,68 @@ h4 {
   padding: 2em;
 }
 
+.post-content {
+  height: 300px;
+  max-height: 300px;
+  min-width: 1.2em;
+  border-radius: 5px;
+}
+
 .post-content h3 {
-  padding-bottom: 15px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.post-content p {
+  font-size: 1em;
+}
+
+.post-content a {
+  color: #241F20;
+  font-size: 1.3em;
+  margin: 0 5px;
+}
+
+.quote {
+  margin: 50px;
+  padding-top: 50px;
+}
+
+.quote {
+  margin-top: 25px;
+  font-size: 21px;
+  text-align: center;
+  -webkit-animation: fadein 20s;
+  /* Safari, Chrome and Opera > 12.1 */
+  /* Firefox < 16 */
+  /* Internet Explorer */
+  /* Opera < 12.1 */
+  animation: fadein 20s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .quote h4 {
-  text-transform: uppercase;
+  font-family: 'Kalam', cursive;
+  font-size: 2.8em;
   font-weight: bolder;
-  margin-top: 2em;
+  font-style: italic;
 }
 
 .newsletter-grid-main {
@@ -255,7 +322,6 @@ h4 {
       grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
   text-align: justify;
-  background-color: #D8D7D6;
   margin: 1em;
   margin-bottom: 80px;
   padding: 0px;
@@ -264,29 +330,23 @@ h4 {
 .newsletter h3 {
   text-align: center;
   font-size: 1.2em;
-}
-
-input[type=email] {
-  font-family: 'Noto Serif', serif;
-  color: grey;
-  padding: 7px 12px;
-  font-size: 0.8em;
-}
-
-.submit {
-  background-color: yellow;
-  color: #ddd;
-  text-transform: uppercase;
-  font-size: 0.8em;
-  letter-spacing: 1px;
-  margin: 0;
-  padding: 8px 12px;
+  color: white;
 }
 
 .eventbrite {
+  background: white url(../img/edu.jpeg);
   background-color: #241F20;
   padding: 5em;
   margin: 0;
+  text-align: center;
+}
+
+.eventbrite h2 {
+  color: white;
+  font-size: 1.1em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .eventbrite button {
@@ -298,6 +358,43 @@ input[type=email] {
   color: white;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.eventbrite button:hover {
+  background-color: #241F20;
+  border: white solid 2px;
+}
+
+.volunteer {
+  background: white url(../img/about2.jpeg);
+  background-color: #241F20;
+  padding: 5em;
+  margin: 0;
+  text-align: center;
+}
+
+.volunteer h2 {
+  color: white;
+  font-size: 1.1em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.volunteer button {
+  background-color: #13A7A5;
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 20px 50px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.volunteer button:hover {
+  background-color: #241F20;
+  border: white solid 2px;
 }
 
 /* Styling placeholder font for email inputs*/
@@ -329,21 +426,31 @@ input[type=email] {
   text-align: center;
 }
 
+.about-page h3 {
+  font-family: 'Kalam', cursive;
+  font-size: 3.5em;
+}
+
 .about-page .main-banner {
-  background: white url(../img/about1.jpeg);
   background-size: cover;
-  min-height: 350px;
+  min-height: 430px;
 }
 
 .about-page .main-banner h3 {
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-size: 3.5em;
+}
+
+.about-page .main-banner-text h3 {
+  color: #ecd089;
+  margin-bottom: 20px;
 }
 
 .text-box {
-  padding: 10% 15%;
+  padding: 0% 25%;
   text-align: center;
-  position: relative;
+  line-height: 20px;
 }
 
 .text-box h2 {
@@ -357,19 +464,21 @@ input[type=email] {
 }
 
 .vision-banner .image-text {
-  background: white url(../img/about2.jpeg);
+  background: white url(../img/vision1.jpeg);
   background-size: cover;
   padding: 14%;
+  color: white;
 }
 
 .story-banner .image-text {
   background: white url(../img/about3.jpeg);
   background-size: cover;
   padding: 14%;
+  color: white;
 }
 
 .image-text h3 {
-  font-size: 40px;
+  font-size: 3.5em;
 }
 
 .ourwork-banner {
@@ -382,7 +491,6 @@ input[type=email] {
 
 .ourwork-banner h2 {
   font-size: 3.5em;
-  float: left;
   color: #D8D7D6;
   text-transform: uppercase;
   width: 30%;
@@ -397,8 +505,9 @@ input[type=email] {
   padding: 2em 1em;
   border-radius: 8px;
   position: relative;
-  right: 30px;
-  top: 350px;
+  left: 300px;
+  top: -200px;
+  font-weight: bold;
 }
 
 .ourwork-banner button:hover {
@@ -407,22 +516,48 @@ input[type=email] {
 }
 
 .fact h3 {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
-  padding: 0 40px;
-  color: #D8D7D6;
-  font-size: 1.2em;
+  padding: 0 20%;
+  color: rgba(36, 31, 32, 0.626);
+  font-size: 0.9em;
+  line-height: 20px;
 }
 
 .mission-text {
   color: #13A7A5;
+  margin: 0 20%;
 }
 
 .vision-text {
-  color: #F9AF42;
+  color: #149ED3;
+  font-size: 1.1em;
+  line-height: 25px;
 }
 
 .story-text {
-  color: #149ED3;
+  color: rgba(36, 31, 32, 0.626);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 20px;
+  margin: 0 10%;
+}
+
+.about-page .text-box {
+  padding: 10%;
+}
+
+.about-page .mission-content .text-box {
+  padding: 0;
+}
+
+.mission-text {
+  padding: 8%;
+}
+
+.fact {
+  padding: 5% 3%;
 }
 
 html {
@@ -645,14 +780,16 @@ template {
 
 .contact-us {
   margin-bottom: 100px;
-  padding: 50px;
+  padding: 2% 8%;
 }
 
 .contact-us h1 {
-  font-size: 2rem;
+  font-family: 'Kalam', cursive;
+  font-size: 3rem;
   text-transform: uppercase;
   margin-bottom: 40px;
   text-align: left;
+  font-weight: bold;
 }
 
 .contact-us h2 {
@@ -661,6 +798,55 @@ template {
 
 .contact-us .meet h2 {
   color: #13A7A5;
+}
+
+.our-work-page .main-banner {
+  background: white url(../img/1-f2.jpeg);
+  background-size: cover;
+}
+
+.our-work-page .main-banner-text h3 {
+  color: white;
+}
+
+.research-repo img {
+  height: 55%;
+  width: 55%;
+  margin-left: 40%;
+}
+
+.repo-text {
+  font-size: 1.4em;
+  padding: 10 20 50 0;
+  margin-right: 25%;
+  margin-top: 15%;
+}
+
+.repo-text h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.repo-text p {
+  font-size: 0.9em;
+}
+
+.research-repo {
+  padding: 10px;
+  position: relative;
+  top: -30px;
+}
+
+.research-repo ul {
+  text-align: left;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 10px 0;
+  border-radius: px;
+  margin-bottom: 50px;
 }
 
 *,
@@ -677,10 +863,18 @@ template {
 
 html,
 body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
   max-height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Proxima Nova, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -699,7 +893,7 @@ h3,
 h4,
 ul {
   font-size: small;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 ul {
@@ -728,19 +922,59 @@ ul {
   line-height: 35px;
 }
 
+.top-nav li a:hover {
+  color: #D8D7D6;
+}
+
 .top-nav li a {
   display: block;
-  font-size: 0.8em;
+  font-size: 10px;
   color: black;
-  font-weight: 550;
   padding-right: 15px;
   text-transform: uppercase;
   text-decoration: none;
+  font-weight: bolder;
 }
 
 .top-nav-flex img {
   max-width: 100%;
   height: 40px;
+}
+
+.hamburger-toggle {
+  float: right;
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-toggle span {
+  background: black;
+  height: 2px;
+  width: 28px;
+  display: block;
+  margin: 6px 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.hamburger-toggle.x-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-toggle.x-toggle span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -webkit-transform-origin: 5px 9px;
+          transform-origin: 5px 9px;
+  -webkit-transform: rotate(45deg);
+  transform-origin: 5px 9px;
+}
+
+.hamburger-toggle.x-toggle span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -webkit-transform-origin: 8px -7px;
+          transform-origin: 8px -7px;
+  -webkit-transform: rotate(-45deg);
+  transform-origin: 8px -7px;
 }
 
 footer {
@@ -774,10 +1008,46 @@ footer {
   text-transform: uppercase;
 }
 
+.footer-nav a:hover {
+  color: #F9AF42;
+}
+
 .footer-nav li {
   text-align: left;
   margin-top: 10px;
   margin-left: 20px;
+}
+
+.footer-desc input {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+}
+
+.footer-desc button {
+  padding: 8px 50px;
+  margin-top: 10px;
+  background-color: #F9AF42;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.copyright p {
+  float: right;
+  position: relative;
+  left: 190px;
+  top: 30px;
+  color: #F6F7F9;
+}
+
+.icons {
+  letter-spacing: 2px;
+  font-size: 1.3em;
+}
+
+.icons a:hover {
+  color: #F9AF42;
 }
 
 .hamburger-toggle {
@@ -794,7 +1064,7 @@ footer {
   margin: 6px 0;
 }
 
-/* mobile */
+/*  */
 @media only screen and (max-width: 900px) {
   .featured-posts ul {
     text-align: left;
@@ -804,20 +1074,55 @@ footer {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-gap: 3em;
-    padding: 20px;
+    padding: px;
     min-height: 600px;
+  }
+  .newsletter-grid-main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 30px;
+    text-align: justify;
+    margin: 1em;
+    margin-bottom: 80px;
+    padding: 0px;
+  }
+  .post-content {
+    height: 200px;
+    max-height: 300px;
+    min-width: 1.3em;
+    border-radius: 5px;
+  }
+  .blog-grid {
+    margin: 60px;
+    grid-area: blog;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "post1 " "post3" "post2";
+    grid-gap: 0em;
+    padding: 20px;
+  }
+  .post1 .propellus-logo {
+    max-width: 60%;
+    height: auto;
+    padding-bottom: 10px;
+    margin: 0 20%;
+  }
+  .main-banner-text h3 {
+    margin: 0 50%;
   }
 }
 
 /* mobile */
 @media only screen and (max-width: 640px) {
   body {
-    background-color: black;
+    background-color: whitesmoke;
   }
   .hamburger-toggle {
     display: block;
     position: relative;
-    z-index: 2;
+    z-index: 1000;
     padding: 10px 0;
   }
   .nav {
@@ -844,15 +1149,44 @@ footer {
     line-height: 50px;
   }
   .nav ul li a {
+    padding: 2px;
+    font-size: 1em;
+    position: relative;
+    top: 200px;
+  }
+  .nav ul li a:hover {
+    background-color: #fff;
+  }
+  .nav ul li a {
     padding: 0;
     font-size: 1em;
   }
   .nav ul li a:hover {
     background-color: #fff;
   }
+  .main-banner h4 {
+    margin: 0 20%;
+  }
+  .ourwork-banner a {
+    position: relative;
+    top: 60px;
+    right: 100px;
+  }
   .featured-posts ul {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .footer-grid-main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .footer-grid-main .footer-desc {
+    margin: 15px;
+  }
+  .footer-grid-main li {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=main.css.map */

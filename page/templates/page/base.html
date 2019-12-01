@@ -12,6 +12,8 @@
     <title>Imagine Cities</title>
     <!-- load favicon -->
     <!-- load font awesome -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Courgette|Kalam|Lobster|Marck+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
         integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <!-- load google fonts -->
@@ -50,6 +52,9 @@
 <body>
     {% block content %}
     {% endblock %}
+    <!-- load JavaScript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="{% static 'js/app.js' %}"></script>
 </body>
 <!-- footer -->
 
@@ -81,9 +86,12 @@
                     </div>
                 </div>
                 <div class="icons">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f icon"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in icon"></i></a>
                     <a href="https://twitter.com"><i class="fab fa-twitter icon"></i></a>
                     <a href="https://www.instagram.com"><i class="fab fa-instagram icon"></i></a>
-                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f icon"></i></a>
+                    <a href="https://www.youtube.com"><i class="fab fa-youtube icon"></i></a>
+
                 </div>
                 <div class="copyright">
                     <p class="copyright-text">&copy; 2019 Imagine Cities</p>
