@@ -857,6 +857,11 @@ template {
   border-radius: px;
   margin-bottom: 50px;
 }
+
+.ourwork{
+  display: flex;
+  flex-wrap: wrap;
+}
 .projects{
   display: flex;
   justify-content: space-evenly;
@@ -872,7 +877,12 @@ template {
 .project-type img{
   width: 30%;
 }
-
+.project-type h3{
+  font-size: 1.3em;
+}
+.project-type p{
+  font-size: 0.7em;
+}
 *,
 *:before,
 *:after {
