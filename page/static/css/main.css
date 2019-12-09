@@ -144,7 +144,7 @@
 .main-banner-text h3,
 h4 {
   color: #F9AF42;
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-align: center;  
   letter-spacing: 1.5px;
   margin-bottom: 15px;  
@@ -161,7 +161,7 @@ h4 {
 }
 
 .main-banner-text h4 {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 800;
   text-transform: uppercase;
 }
