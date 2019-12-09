@@ -1,0 +1,29 @@
+$primary-colour: #241F20;
+$primary-colour2: #F9AF42;
+$primary-colour3: #13A7A5;
+$primary-colour4: #149ED3;
+$text-color: #D8D7D6;
+$accent-colour: gray;
+
+.contact-us {
+    margin-bottom: 100px;
+    padding: 2% 8%;
+}
+
+.contact-us h1 {
+    font-family: 'Kalam', cursive;
+	font-size: 3rem;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.contact-us h2 {
+    font-size: 0.9em;
+}
+
+.contact-us .meet h2 {
+    color: #13A7A5;;
+}
+

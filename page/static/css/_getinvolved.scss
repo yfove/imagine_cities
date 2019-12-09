@@ -1,0 +1,110 @@
+$primary-colour: #241F20;
+$primary-colour2: #F9AF42;
+$primary-colour3: #13A7A5;
+$primary-colour4: #149ED3;
+$text-color: #D8D7D6;
+$accent-colour: gray;
+
+.join-page .main-banner h3{
+    color: white;
+}
+.quote2 h5{
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 50px;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 0 20px;
+}
+
+.propellus-logo img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+.join-page .main-banner {
+	background: white url(../img/1-c.jpeg);
+    background-size: cover;
+    max-width: 100%;
+}
+
+.bottom-img img {
+    padding: 0 35px 35px 35px;
+    max-width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.bottom-img p{
+    color: #F9AF42;
+    position: relative;
+    top: -150px;
+}
+
+.blog-grid {
+    margin: 60px;
+    grid-area: blog;
+    display: grid;
+    grid-template-areas:
+        "post1 post2"
+        "post3 post2";
+    grid-gap: 0em;
+    padding: 20px;
+}
+
+.box {
+    background-color: none;
+}
+
+.post1 {
+    grid-area: post1;
+}
+
+.post2 {
+    grid-area: post2;
+    color: rgb(138, 134, 130);
+    text-align: center;
+}
+
+.post2 span{
+    font-weight: 600;
+    color: darkgray
+}
+
+.post3 {
+    grid-area: post3;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.post3 button {
+    background-color: #F9AF42;
+    border: none;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 20px 50px;
+    color: white;
+    // text-align: center;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+
+.post3 button:hover {
+    background-color: #13A7A5;
+    border: #D8D7D6 solid 2px;
+}
+.post2 .propellus-text h3{
+    line-height: 130%;
+    font-weight: 300;
+    font-size: 1.3em;
+    padding: 40px;
+}
+
+.post2 .propellus-text h3:hover {
+    font-weight: 800;
+    color: gray;
+}

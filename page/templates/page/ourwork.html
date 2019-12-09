@@ -1,4 +1,5 @@
 {% extends 'page/base.html' %}
+{% load staticfiles %}
 
 {% block content %}
 <main class="our-work-page">
@@ -9,61 +10,89 @@
         </div>
     </div>
     <section class="research-repo">
-        <div class="pocket-img">
-        </div>
-        <div class="repo-text">
-            <h3>Research Repository</h3>
-            <p>We collect and share city building research from across the world. We follow a wide range of research
-                organizations, collect interdisciplinary research across 22 different categories, and share the research
-                on social media platforms</p>
-        </div>
+        <ul>
+            <li>
+                <div class="pocket">
+                    <a href="https://getpocket.com/@imaginecities"><img src="{% static 'img/Pocket-4@2x.png' %}" alt="logo" /></a>
+                </div>
+            </li>
+            <li>
+                <div class="repo-text">
+                    <h3>Research Repository</h3>
+                    <p>We Collect and share city building research from across the world. We follow a wide range of
+                        research
+                        organizations, collect interdisciplinary research across 22 different categories, and share the
+                        research
+                        on social media platforms
+                    </p>
+                </div>
+            </li>
+        </ul>
     </section>
+
     <!-- featured posts -->
-    <section class="featured-posts">
-        <div class="wrapper">
-            <h2>Featured Posts</h2>
+
+    <section class="projects">
+        <article class="project-type">
+                <a href="https://www.instagram.com/imaginecities/" target="_blank"><img src="{% static 'img/Instagram-4@2x.png' %}" alt="logo"/></a>
+                <div class="project-type-a box">
+                    <h3>Year In Review </h3>
+                    <p>The Year in Review highlights the best of the best. We pull together the most innovative and unique pieces of research that are solving city problems from our research repository using a defined criteria. To explore this annual collection follow us on Instragram @imaginecities.</p>
+                   
+                </div>
+        </article>
+        <article class="project-type">
+                <a href="https://twitter.com/imaginecities/" target="_blank"><img src="{% static 'img/Twitter-4@2x.png' %}" alt="logo"/></a>
+                <div class="project-type-b box">
+                    <h3>Speaker Series</h3>
+                    <p>Our community of engaged citizens includes many inspiring and creative innovators who challenge the status quo in an effort to build better cities. Our speaker series allows all of us to learn more about city building, celebrate impact and consider how we can each contribute to our city. Sign up for our newsletter to stay looped</p>
+                     
+                </div>
+        </article>
+        <article class="project-type">
+                <a href="https://https://medium.com/imagine-cities" target="_blank"><img src="{% static 'img/Medium-4@2x.png' %}" alt="logo"/></a>
+                <div class="project-type-c box">
+                    <h3>Short Stories</h3>
+                    <p>Throughout the year we curate and show collections of short films from our research repository that highlight interesting perspectives about city building. The topics we choose aim to align with the most important urban issues of the moment, spark discussion, and connect city-builders. Join us at our next event to view, connect and converse.</p>
+                      
+                </div>
+        </article>
+    </section>
+    <!-- <section class="featured-posts">
+        <div class="wrapper">            
             <ul>
-                <li class="post box">
+                <li class="post-a box">
                     <div class="overlay-container">
                         <img src="" alt="">
                         <div class="overlay"></div>
                     </div>
                     <div class="post-content">
-                        <h3>Research Repository</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi eveniet esse beatae sunt
-                            nobis repellendus eligendi adipisci veniam dicta! Facere rem nulla aspernatur facilis aut
-                            vero, beatae fugit libero quam dolorem repudiandae dolores consequatur saepe quaerat amet,
-                            fugiat modi dicta.</p>
+                        <h3>Year In Review </h3>
+                        <p>The Year in Review highlights the best of the best. We pull together the most innovative and unique pieces of research that are solving city problems from our research repository using a defined criteria. To explore this annual collection follow us on Instragram @imaginecities.</p>
                     </div>
                 </li>
-                <li class="post box">
+                <li class="post-b box">
                     <div class="overlay-container">
                         <img src="" alt="">
                         <div class="overlay"></div>
                     </div>
                     <div class="post-content">
-                        <h3>Research Repository</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi eveniet esse beatae sunt
-                            nobis repellendus eligendi adipisci veniam dicta! Facere rem nulla aspernatur facilis aut
-                            vero, beatae fugit libero quam dolorem repudiandae dolores consequatur saepe quaerat amet,
-                            fugiat modi dicta.</p>
+                        <h3>Speaker Series</h3>
+                        <p>Our community of engaged citizens includes many inspiring and creative innovators who challenge the status quo in an effort to build better cities. Our speaker series allows all of us to learn more about city building, celebrate impact and consider how we can each contribute to our city. Sign up for our newsletter to stay looped</p>
                     </div>
                 </li>
-                <li class="post box">
+                <li class="post-c box">
                     <div class="overlay-container">
                         <img src="" alt="">
                         <div class="overlay"></div>
                     </div>
                     <div class="post-content">
-                        <h3>Research Repository</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi eveniet esse beatae sunt
-                            nobis repellendus eligendi adipisci veniam dicta! Facere rem nulla aspernatur facilis aut
-                            vero, beatae fugit libero quam dolorem repudiandae dolores consequatur saepe quaerat amet,
-                            fugiat modi dicta.</p>
+                        <h3>Short Stories</h3>
+                        <p>Throughout the year we curate and show collections of short films from our research repository that highlight interesting perspectives about city building. The topics we choose aim to align with the most important urban issues of the moment, spark discussion, and connect city-builders. Join us at our next event to view, connect and converse.</p>
                     </div>
                 </li>
             </ul>
-            <div class="css-carousel">
+            <div class="css-carousel"> -->
 
                 <!-- carousel controls -->
                 <input type="radio" name="carousel" id="carousel-1" checked />
@@ -78,17 +107,9 @@
                 <label for="carousel-3"></label>
             </div>
 
-            <!-- carousel slides -->
-            <div class="carousel-slides">
-                <div class="carousel-inner">
-                    <div class="carousel-item">slide1</div>
-                    <div class="carousel-item">slide2</div>
-                    <div class="carousel-item">slide3</div>
-                </div>
-            </div>
+
         </div><!-- wrapper end -->
     </section><!-- featured posts end -->
 </main>
-<h1>Programs and Projects</h1>
-
+<h1>.</h1>
 {% endblock %}

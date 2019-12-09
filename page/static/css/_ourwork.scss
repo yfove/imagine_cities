@@ -1,0 +1,61 @@
+$primary-colour: #241F20;
+$primary-colour2: #F9AF42;
+$primary-colour3: #13A7A5;
+$primary-colour4: #149ED3;
+$text-color: #D8D7D6;
+$accent-colour: gray;
+
+.our-work-page .main-banner {
+	background: white url(../img/1-f2.jpeg);
+	background-size: cover;
+}
+
+.our-work-page .main-banner-text h3{
+    // color: #241F20;
+    color: #13A7A5;
+    font-size: 2em;
+}
+
+.our-work-page .main-banner-text h3 {
+    // color: rgb(236, 208, 137);
+}
+
+.research-repo img {
+    height: 55%;
+    width: 55%;
+    margin-left: 40%;
+}
+
+.repo-text {
+    // background-color: #13A7A5;
+    font-size: 1.4em;
+    padding: 10 20 50 0;
+    margin-right: 25%;
+    margin-top: 15%
+}
+
+.repo-text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.repo-text p {
+    font-size: 0.9em;
+}
+
+.research-repo {
+    padding: 10px;
+    position: relative;
+    top: -30px;
+}
+
+
+.research-repo ul {
+    text-align: left;
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 10px 0;
+    border-radius: px;
+    margin-bottom: 50px;
+}
