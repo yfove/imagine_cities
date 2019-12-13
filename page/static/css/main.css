@@ -118,7 +118,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* padding: 0px; */
+  padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,26 +129,18 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  top: -100px;
+  top: -80px;
   z-index: 1;
-  height: -webkit-fill-available;
-}
-.main-banner-text {
-  margin-top: -350px;
-}
-.main-banner-text h3 {
-  font-style: italic;
-  font-weight: 300;
 }
 
 .main-banner-text h3,
 h4 {
   color: #F9AF42;
-  font-size: 3.5rem;
-  text-align: center;  
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
   letter-spacing: 1.5px;
-  margin-bottom: 15px;  
-
+  margin-bottom: 5px;
 }
 
 .home .main-banner-text h3, h4 {
@@ -161,7 +153,7 @@ h4 {
 }
 
 .main-banner-text h4 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -197,6 +189,9 @@ h4 {
   text-align: center;
 }
 
+.featured-posts {
+  padding: 20px;
+}
 
 .quote h4 {
   padding: 20px;
@@ -205,6 +200,7 @@ h4 {
   opacity: 80%;
   text-align: center;
   padding-bottom: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .quote {
@@ -242,14 +238,12 @@ h4 {
 }
 
 .post-a .post-content {
-  background: url(../img/ProjectSquaresBorder-3@2x.png);
-  padding:2em;
-  background-position: center;
-  background-size: cover;
+  background-color: #F9AF42;
+  padding: 2em;
 }
 
 .post-b .post-content {
-  /* background-color: #13A7A5; */
+  background-color: #13A7A5;
   padding: 2em;
 }
 
@@ -263,18 +257,15 @@ h4 {
   max-height: 300px;
   min-width: 1.2em;
   border-radius: 5px;
-  padding: 20px;
 }
 
 .post-content h3 {
   margin-bottom: 10px;
   font-size: 1.2em;
-  text-align: center;
 }
 
 .post-content p {
   font-size: 1em;
-  line-height: 15px;
 }
 
 .post-content a {
@@ -319,7 +310,6 @@ h4 {
 }
 
 .quote h4 {
-  font-family: 'Kalam', cursive;
   font-size: 2.8em;
   font-weight: bolder;
   font-style: italic;
@@ -330,9 +320,8 @@ h4 {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  text-align: justify;
-  margin: 1em;
+  grid-gap: 30px;
+  margin: .5em;
   margin-bottom: 80px;
   padding: 0px;
 }
@@ -342,28 +331,24 @@ h4 {
   font-size: 1.2em;
   color: white;
 }
-.eventbrite{
-  background: white url(../img/edu.jpeg);
-  background-color: #241F20;
-  background-size: cover;
-  background-position: center;
-}
 
-.eventbrite, .volunteer, .community {    
+.eventbrite {
+  background: white url(../img/1-f.jpeg);
+  background-color: #241F20;
   padding: 5em;
   margin: 0;
   text-align: center;
- }
- 
-.eventbrite h2, .volunteer h2, .community h2 {
-  color: #000;
+}
+
+.eventbrite h2 {
+  color: white;
   font-size: 1.1em;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
-.eventbrite button, .volunteer button, .community button{
+.eventbrite button {
   background-color: #149ED3;
   border: none;
   font-weight: 600;
@@ -374,32 +359,73 @@ h4 {
   cursor: pointer;
 }
 
-.eventbrite button:hover, .volunteer button:hover, .community button:hover {
+.eventbrite button:hover {
   background-color: #241F20;
-  border: white solid 2px;
-
+  border: white solid 1px;
 }
-.community {
-  background: white url(../img/1-b.jpeg);
-  background-color: #241F20;
-  background-size: cover;
-  background-position: center;
-  }
 
-.volunteer {
+.community {
   background: white url(../img/about2.jpeg);
   background-color: #241F20;
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 5em;
-  
+  padding: 5em;
+  margin: 0;
+  text-align: center;
+}
+
+.community h2 {
+  color: white;
+  font-size: 1.1em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.community button {
+  background-color: #149ED3;
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 20px 50px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.community button:hover {
+  background-color: #241F20;
+  border: white solid 1px;
+}
+
+.volunteer {
+  background: white url(../img/edu.jpeg);
+  background-color: #241F20;
+  padding: 5em;
+  margin: 0;
+  text-align: center;
+}
+
+.volunteer h2 {
+  color: white;
+  font-size: 1.1em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .volunteer button {
-  background-color: #13A7A5;  
+  background-color: #13A7A5;
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 20px 50px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
 }
-.community button{
-  background-color: #ecd089;
+
+.volunteer button:hover {
+  background-color: #241F20;
+  border: white solid 1px;
 }
 
 /* Styling placeholder font for email inputs*/
@@ -812,9 +838,7 @@ template {
 
 .our-work-page .main-banner-text h3 {
   color: #13A7A5;
-  font-size: 4em;
-  font-weight: 400px;
-  
+  font-size: 2em;
 }
 
 .research-repo img {
@@ -831,13 +855,12 @@ template {
 }
 
 .repo-text h3 {
-  font-size: 2em;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
 .repo-text p {
-  font-size: 1em;
-  padding: 30px 50px 20px 0px;
+  font-size: 0.9em;
 }
 
 .research-repo {
@@ -858,31 +881,6 @@ template {
   margin-bottom: 50px;
 }
 
-.ourwork{
-  display: flex;
-  flex-wrap: wrap;
-}
-.projects{
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  overflow: hidden;
-  flex-wrap: wrap;
-  margin-top: -58px;
-}
-.project-type{
-  width: 25%;
-  padding: 20px;
-}
-.project-type img{
-  width: 30%;
-}
-.project-type h3{
-  font-size: 1.3em;
-}
-.project-type p{
-  font-size: 0.7em;
-}
 *,
 *:before,
 *:after {
@@ -1099,6 +1097,19 @@ footer {
 }
 
 /*  */
+@media only screen and (max-width: 1200px) {
+  .newsletter-grid-main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin: .5em;
+    margin-bottom: 80px;
+    padding: 0px;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .featured-posts ul {
     text-align: left;
@@ -1210,7 +1221,6 @@ footer {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  
   .footer-grid-main {
     display: -ms-grid;
     display: grid;
@@ -1223,29 +1233,5 @@ footer {
   .footer-grid-main li {
     text-align: center;
   }
-}
-@media only screen and (max-width: 800px) {
- .research-repo ul{
-   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-      margin: auto;
-      display: flex;
- }
- .repo-text{
-   margin: auto;
- }
- .repo-text h3{
-   font-size: 1em;
-   margin-bottom: 0;
- }
- .repo-text p{
-   font-size: 0.7em;
-   padding-top: 15px;
- }
- .research-repo img{
-   min-width:100% ;
-   margin-right: 20px;
-   margin-left: 0;
- }
 }
 /*# sourceMappingURL=main.css.map */
