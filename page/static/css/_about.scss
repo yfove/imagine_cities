@@ -6,8 +6,10 @@ $text-color: #D8D7D6;
 $accent-colour: gray;
 
 .about-page h3 {
-    font-family: 'Kalam', cursive;
+    // font-family: 'Kalam', cursive;
     font-size: 3.5em;
+    position: relative;
+    bottom: 20px;
 
 }
 

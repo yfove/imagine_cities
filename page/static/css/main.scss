@@ -25,6 +25,10 @@ $accent-colour: gray;
 	padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 html,
 body {
 	-webkit-font-smoothing: antialiased;
@@ -198,9 +202,10 @@ footer {
 .copyright p {
 	float: right;
 	position: relative;
-	left: 190px;
-	top: 30px;
+	left: 230px;
+	top: 13px;
 	color: #F6F7F9;
+	font-size: .6em;
 }
 
 .icons {
@@ -247,6 +252,16 @@ footer {
 		margin: .5em;
 		margin-bottom: 80px;
 		padding: 0px;
+	}
+
+	.projects ul {
+		text-align: left;
+		list-style: none;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 10px 0;
+		border-radius: px;
+		margin-bottom: 50px;
 	}
 }
 
@@ -300,8 +315,31 @@ footer {
 		margin: 0 20%;
 	}
 
+	.post1 .pocket-logo {
+		// max-width: 60%;
+		height: auto;
+		position: relative;
+		top: 30px;
+		margin: 0 20%;
+		text-align: center;
+	}
+
 	.main-banner-text h3 {
 		margin: 0 5%;
+	}
+
+	.quote {
+		font-size: .8em;
+	}
+
+	.projects ul {
+		text-align: left;
+		list-style: none;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 10px 0;
+		border-radius: px;
+		margin-bottom: 50px;
 	}
 
 
@@ -353,7 +391,7 @@ footer {
 		padding: 2px;
 		font-size: 1em;
 		position: relative;
-		top: 190px;
+		top: 390px;
 	}
 
 	.nav ul li a:hover {
@@ -400,4 +438,20 @@ footer {
 	.footer-grid-main li {
 		text-align: center;
 	}
+
+	.projects ul {
+		text-align: left;
+		list-style: none;
+		display: grid;
+		grid-gap: 2em;
+		grid-template-columns: 1fr;
+		padding: 10px 0;
+		border-radius: px;
+		margin-bottom: 50px;
+	}
+
+	.pocket-logo img {
+		position: relative;
+		right: 40px;
+	  }
 }

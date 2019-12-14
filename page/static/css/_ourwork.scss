@@ -7,28 +7,34 @@ $accent-colour: gray;
 
 .our-work-page .main-banner {
 	background: white url(../img/1-f2.jpeg);
-	background-size: cover;
+    background-size: cover;
+    min-height: 430px;
 }
 
 .our-work-page .main-banner-text h3{
+    position: relative;
+    bottom: 20px;
     // color: #241F20;
-    color: #13A7A5;
-    font-size: 2em;
+    color: black;
+    // font-size: 3em;
+    // font-weight: bold;
 }
 
-.our-work-page .main-banner-text h3 {
-    // color: rgb(236, 208, 137);
+
+.pocket-grid-main {
+    position: relative;
+    bottom: 60px;
+    margin: 0 10%;
 }
 
-.research-repo img {
-    height: 55%;
-    width: 55%;
-    margin-left: 40%;
+.pocket-logo img{
+    position: relative;
+    bottom: 30px;
 }
 
 .repo-text {
     // background-color: #13A7A5;
-    font-size: 1.4em;
+    font-size: 1.0em;
     padding: 10 20 50 0;
     margin-right: 25%;
     margin-top: 15%
@@ -56,6 +62,21 @@ $accent-colour: gray;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding: 10px 0;
+    margin-bottom: 50px;
+}
+
+.projects ul {
+    text-align: left;
+	list-style: none;
+    display: grid;
+    grid-gap: 3em;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 10%;
     border-radius: px;
     margin-bottom: 50px;
+}
+
+.projects {
+    position: relative;
+    bottom: 200px;
 }

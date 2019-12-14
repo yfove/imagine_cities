@@ -17,6 +17,8 @@
         integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <!-- load google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400i|Raleway:400,700,900" rel="stylesheet">
+    <!-- animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- link to style sheets -->
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
@@ -52,6 +54,7 @@
     {% block content %}
     {% endblock %}
     <!-- load JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script src="{% static 'js/app.js' %}"></script>
 </body>
@@ -93,7 +96,7 @@
 
                 </div>
                 <div class="copyright">
-                    <p class="copyright-text">&copy; 2019 Imagine Cities</p>
+                    <p class="copyright-text">&copy; 2019 Imagine Cities &RightArrow; built by yFove & team</p>
                 </div>
             </div><!-- footer main grid end -->
         </div> <!-- wrapper end -->

@@ -6,6 +6,8 @@ $text-color: #D8D7D6;
 $accent-colour: gray;
 
 .join-page .main-banner h3{
+    position: relative;
+    bottom: 30px;
     color: white;
 }
 .quote2 h5{
@@ -25,8 +27,9 @@ $accent-colour: gray;
 
 .join-page .main-banner {
 	background: white url(../img/1-c.jpeg);
-    background-size: cover;
     max-width: 100%;
+    background-size: cover;
+    min-height: 430px;
 }
 
 .bottom-img img {
@@ -101,7 +104,7 @@ $accent-colour: gray;
     line-height: 130%;
     font-weight: 300;
     font-size: 1.3em;
-    padding: 40px;
+    padding: 10px 60px;
 }
 
 .post2 .propellus-text h3:hover {

@@ -6,7 +6,7 @@ $text-color: #D8D7D6;
 $accent-colour: gray;
 
 .main-banner {
-	min-height: 430px;
+	min-height: 600px;
 	max-width: 100%;
 	background: white url(../img/Homepage.png);
 	background-size: cover;
@@ -26,10 +26,13 @@ h4 {
 	color: $primary-colour2;
 	font-size: 2.5rem;
 	text-align: center;
-	font-weight: bold;
+	font-weight: lighter;
 	letter-spacing: 1.5px;
 	margin-bottom: 5px;
-
+	font-style: italic;
+	margin-top: -50;
+	position: relative;
+	bottom: 120px;
 }
 
 .home .main-banner-text h3,h4 {
@@ -57,7 +60,7 @@ h4 {
 	justify-content: centre;
 	position: relative;
     z-index: 100;
-	top: 20px;
+	bottom: 10px;
 	border: none;
 	border-radius: 10px;
 	font-weight: bolder;
@@ -66,14 +69,14 @@ h4 {
 
 
 .learn-more button {
-    background-color: black;
+    background-color: $primary-colour2;
     cursor: pointer;
 }
 
 
 
 .learn-more button:hover{
-    background-color: orange;
+    background-color: black;
 }
 
 .learn-more {
@@ -92,6 +95,8 @@ h4 {
     text-align: center;
 	padding-bottom: 40px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
+	position: relative;
+	bottom: -30px;
 }
 
 .quote {
@@ -118,9 +123,9 @@ h4 {
 	list-style: none;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 2em;
+	grid-gap: 3em;
 	padding: 15px 0;
-	border-radius: px;
+	// border-radius: px;
 }
 
 .featured-posts h2 {
@@ -210,13 +215,16 @@ h4 {
 	// background-color: #D8D7D6;
 	margin: .5em;
     margin-bottom: 80px;
-    padding: 0px;
+	padding: 0px;
+	
 }
 
 .newsletter h3 {
 	text-align: center;
 	font-size: 1.2em;
-	color: white;
+	color: black;
+	text-transform: uppercase;
+	padding: 30px;
 }
 
 
@@ -240,7 +248,7 @@ h4 {
 }
 
 .eventbrite button {
-    background-color: $primary-colour4;
+    background-color: $primary-colour2;
     border: none;
     font-weight: 600;
     border-radius: 8px;
@@ -252,7 +260,7 @@ h4 {
 }
 
 .eventbrite button:hover {
-	background-color: #241F20;
+	background-color: $primary-colour1;
 	border: white solid 1px;
 }
 

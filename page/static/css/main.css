@@ -1,4 +1,6 @@
 .join-page .main-banner h3 {
+  position: relative;
+  bottom: 30px;
   color: white;
 }
 
@@ -19,8 +21,9 @@
 
 .join-page .main-banner {
   background: white url(../img/1-c.jpeg);
-  background-size: cover;
   max-width: 100%;
+  background-size: cover;
+  min-height: 430px;
 }
 
 .bottom-img img {
@@ -103,7 +106,7 @@
   line-height: 130%;
   font-weight: 300;
   font-size: 1.3em;
-  padding: 40px;
+  padding: 10px 60px;
 }
 
 .post2 .propellus-text h3:hover {
@@ -112,7 +115,7 @@
 }
 
 .main-banner {
-  min-height: 430px;
+  min-height: 600px;
   max-width: 100%;
   background: white url(../img/Homepage.png);
   background-size: cover;
@@ -138,9 +141,13 @@ h4 {
   color: #F9AF42;
   font-size: 2.5rem;
   text-align: center;
-  font-weight: bold;
+  font-weight: lighter;
   letter-spacing: 1.5px;
   margin-bottom: 5px;
+  font-style: italic;
+  margin-top: -50;
+  position: relative;
+  bottom: 120px;
 }
 
 .home .main-banner-text h3, h4 {
@@ -169,7 +176,7 @@ h4 {
           justify-content: centre;
   position: relative;
   z-index: 100;
-  top: 20px;
+  bottom: 10px;
   border: none;
   border-radius: 10px;
   font-weight: bolder;
@@ -177,12 +184,12 @@ h4 {
 }
 
 .learn-more button {
-  background-color: black;
+  background-color: #F9AF42;
   cursor: pointer;
 }
 
 .learn-more button:hover {
-  background-color: orange;
+  background-color: black;
 }
 
 .learn-more {
@@ -201,6 +208,8 @@ h4 {
   text-align: center;
   padding-bottom: 40px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  bottom: -30px;
 }
 
 .quote {
@@ -228,9 +237,8 @@ h4 {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2em;
+  grid-gap: 3em;
   padding: 15px 0;
-  border-radius: px;
 }
 
 .featured-posts h2 {
@@ -329,7 +337,9 @@ h4 {
 .newsletter h3 {
   text-align: center;
   font-size: 1.2em;
-  color: white;
+  color: black;
+  text-transform: uppercase;
+  padding: 30px;
 }
 
 .eventbrite {
@@ -349,7 +359,7 @@ h4 {
 }
 
 .eventbrite button {
-  background-color: #149ED3;
+  background-color: #F9AF42;
   border: none;
   font-weight: 600;
   border-radius: 8px;
@@ -458,8 +468,9 @@ h4 {
 }
 
 .about-page h3 {
-  font-family: 'Kalam', cursive;
   font-size: 3.5em;
+  position: relative;
+  bottom: 20px;
 }
 
 .about-page .main-banner {
@@ -834,21 +845,28 @@ template {
 .our-work-page .main-banner {
   background: white url(../img/1-f2.jpeg);
   background-size: cover;
+  min-height: 430px;
 }
 
 .our-work-page .main-banner-text h3 {
-  color: #13A7A5;
-  font-size: 2em;
+  position: relative;
+  bottom: 20px;
+  color: black;
 }
 
-.research-repo img {
-  height: 55%;
-  width: 55%;
-  margin-left: 40%;
+.pocket-grid-main {
+  position: relative;
+  bottom: 60px;
+  margin: 0 10%;
+}
+
+.pocket-logo img {
+  position: relative;
+  bottom: 30px;
 }
 
 .repo-text {
-  font-size: 1.4em;
+  font-size: 1.0em;
   padding: 10 20 50 0;
   margin-right: 25%;
   margin-top: 15%;
@@ -877,8 +895,25 @@ template {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   padding: 10px 0;
+  margin-bottom: 50px;
+}
+
+.projects ul {
+  text-align: left;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3em;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding: 10%;
   border-radius: px;
   margin-bottom: 50px;
+}
+
+.projects {
+  position: relative;
+  bottom: 200px;
 }
 
 *,
@@ -891,6 +926,10 @@ template {
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
@@ -1068,9 +1107,10 @@ footer {
 .copyright p {
   float: right;
   position: relative;
-  left: 190px;
-  top: 30px;
+  left: 230px;
+  top: 13px;
   color: #F6F7F9;
+  font-size: .6em;
 }
 
 .icons {
@@ -1107,6 +1147,17 @@ footer {
     margin: .5em;
     margin-bottom: 80px;
     padding: 0px;
+  }
+  .projects ul {
+    text-align: left;
+    list-style: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding: 10px 0;
+    border-radius: px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1154,8 +1205,29 @@ footer {
     padding-bottom: 10px;
     margin: 0 20%;
   }
+  .post1 .pocket-logo {
+    height: auto;
+    position: relative;
+    top: 30px;
+    margin: 0 20%;
+    text-align: center;
+  }
   .main-banner-text h3 {
     margin: 0 5%;
+  }
+  .quote {
+    font-size: .8em;
+  }
+  .projects ul {
+    text-align: left;
+    list-style: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding: 10px 0;
+    border-radius: px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1197,7 +1269,7 @@ footer {
     padding: 2px;
     font-size: 1em;
     position: relative;
-    top: 190px;
+    top: 390px;
   }
   .nav ul li a:hover {
     background-color: #fff;
@@ -1232,6 +1304,22 @@ footer {
   }
   .footer-grid-main li {
     text-align: center;
+  }
+  .projects ul {
+    text-align: left;
+    list-style: none;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2em;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 10px 0;
+    border-radius: px;
+    margin-bottom: 50px;
+  }
+  .pocket-logo img {
+    position: relative;
+    right: 40px;
   }
 }
 /*# sourceMappingURL=main.css.map */
