@@ -57,6 +57,7 @@ h4 {
 	font-size: .8em;
 	text-transform: uppercase;
 	padding: 15px 30px;
+	margin: 10px;
 	justify-content: centre;
 	position: relative;
     z-index: 100;
@@ -107,13 +108,23 @@ h4 {
 	text-decoration: none;
 }
 
+.extra {
+	position: relative;
+	bottom: 50px;
+	padding: 0;
+	margin: 0;
+	border: solid 2px black;
+}
 
+.box {
+	padding: 30px;
+}
 // main page
 // featured posts
 .featured-posts {
 	text-align: center;
 	display: block;
-	float: left;
+	// float: left;
 	position: relative;
 	top: -30px;
 }
@@ -123,7 +134,7 @@ h4 {
 	list-style: none;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 3em;
+	grid-gap: 1em;
 	padding: 15px 0;
 	// border-radius: px;
 }
@@ -133,37 +144,11 @@ h4 {
 	margin-bottom: 2em;
 }
 
-.extra {
-	position: relative;
-	bottom: 50px;
-}
 
-
-.post-a .post-content{
-	background-color: $primary-colour2;
-	padding: 2em;
-}
-
-.post-b .post-content{
-	background-color: #13A7A5;;
-	padding: 2em;
-}
-
-.post-c .post-content{
-	background-color: #D8D7D6;
-	padding: 2em;
-}
-
-.post-content {
-	height: 300px;
-	max-height: 300px;
-	min-width: 1.2em;
-	border-radius: 5px;
-}
 
 .post-content h3 {
 	margin-bottom: 10px;
-	font-size: 1.2em;
+	font-size: 1.5em;
 }
 
 .post-content p{
@@ -182,6 +167,8 @@ h4 {
 .quote {
 	margin: 50px;
 	padding-top: 50px;
+	position: relative;
+	bottom: 70px;
 }
 
 .quote {
@@ -215,13 +202,22 @@ h4 {
 
 // newsletter
 
+.newsletter {
+	padding: 0;
+	margin: 0;
+	position: static;
+	// right: 40px;
+}
+
+
+
 .newsletter-grid-main {
     display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	grid-gap: 30px;
 	// text-align: justify;
 	// background-color: #D8D7D6;
-	margin: .5em;
+	margin: 0em;
     margin-bottom: 80px;
 	padding: 0px;
 	
@@ -391,13 +387,18 @@ h4 {
 }
 
 .carousel-cell {
-	width: 40%;
-	padding: 20px 50px 50px 50px;
+	width: 45%;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	padding: 30px 50px 40px 50px;
     height: 300px;
-    margin-right: 25px;
-    background-color: $primary-colour2;
-    border-radius: 5px;
-    counter-increment: gallery-cell;
+    margin-right: 35px;
+	background-color: $primary-colour2;
+	// border: black solid 2px;
+	border-radius: 5px;
+	// font-weight: 500;
+	line-height: 18px;
+	font-size: 15px;
+	counter-increment: gallery-cell;
 }
 
 .flickity-page-dots{
@@ -418,13 +419,14 @@ h4 {
 //   color: white;
 // }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 940px) {
 	.carousel-cell {
-		width: 70%;
-		padding: 20px 50px 50px 50px;
+		width: 55%;
+		padding: 50px 30px 10px 30px;
 		height: 300px;
 		margin-right: 15px;
 		background-color: $primary-colour2;
+		line-height: 13px;
 		border-radius: 5px;
 		counter-increment: gallery-cell;
 	}
@@ -442,6 +444,11 @@ h4 {
 		padding: 10px;
 		text-align: left;
 	}
+
+	.post-content h3 {
+		margin-bottom: 10px;
+		font-size: 1.3em;
+	}
 }
 
 @media only screen and (max-width: 550px) {
@@ -455,10 +462,15 @@ h4 {
 		counter-increment: gallery-cell;
 	}
 	.post-content p{
-		font-size: 12px;
-		padding: 0px;
+		font-size: 13px;
+		padding: 20px 0px;
 		font-weight: 400;
 		text-align: left;
+	}
+
+	.post-content h3 {
+		margin-bottom: 10px;
+		font-size: 1.1em;
 	}
 
 }

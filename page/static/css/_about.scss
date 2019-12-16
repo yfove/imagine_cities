@@ -10,6 +10,8 @@ $accent-colour: gray;
     font-size: 3.5em;
     position: relative;
     bottom: 20px;
+    color: $primary-colour2;
+    // font-weight: 800;
 
 }
 
@@ -26,8 +28,9 @@ $accent-colour: gray;
 }
 
 .about-page .main-banner-text h3 {
-    color: rgb(236, 208, 137);
+    color: $primary-colour2;
     margin-bottom: 20px;
+    // font-weight: 800;
 }
 
 
