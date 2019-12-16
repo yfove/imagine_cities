@@ -246,6 +246,11 @@ h4 {
   margin-bottom: 2em;
 }
 
+.extra {
+  position: relative;
+  bottom: 50px;
+}
+
 .post-a .post-content {
   background-color: #F9AF42;
   padding: 2em;
@@ -1074,7 +1079,7 @@ ul {
 }
 
 .top-nav li a:hover {
-  color: #D8D7D6;
+  color: #F9AF42;
 }
 
 .top-nav li a {

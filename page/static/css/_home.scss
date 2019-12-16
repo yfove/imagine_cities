@@ -133,6 +133,11 @@ h4 {
 	margin-bottom: 2em;
 }
 
+.extra {
+	position: relative;
+	bottom: 50px;
+}
+
 
 .post-a .post-content{
 	background-color: $primary-colour2;
@@ -437,7 +442,6 @@ h4 {
 		padding: 10px;
 		text-align: left;
 	}
-
 }
 
 @media only screen and (max-width: 550px) {
