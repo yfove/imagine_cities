@@ -1,0 +1,27 @@
+/* external css: flickity.css */
+
+
+.carousel {
+    background: #EEE;
+    padding: 120px;
+}
+
+.carousel-cell {
+    width: 10%;
+    height: 600px;
+    margin-right: 10px;
+    background-color: #8C8;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+

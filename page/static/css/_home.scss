@@ -2,7 +2,7 @@ $primary-colour1: #241F20;
 $primary-colour2: #F9AF42;
 $primary-colour3: #13A7A5;
 $primary-colour4: #149ED3;
-$text-color: #D8D7D6;
+$primary-colour5: #D8D7D6;
 $accent-colour: gray;
 
 .main-banner {
@@ -130,6 +130,7 @@ h4 {
 
 .featured-posts h2 {
 	font-size: 1.2em;
+	margin-bottom: 2em;
 }
 
 
@@ -161,7 +162,9 @@ h4 {
 }
 
 .post-content p{
-	font-size: 1em;
+	font-size: .9em;
+	padding: 15px;
+	text-align: left;
 }
 
 .post-content a{
@@ -364,4 +367,94 @@ h4 {
 	font-family: 'Noto Serif', serif;
 	font-size: 0.9em;
     text-align: center;
+}
+
+.carousel {
+    background: rgba(250, 246, 235, 0.39);
+	padding: 50px;
+	margin-bottom: 15%;
+}
+
+.carousel .c1 {
+	background-color: $primary-colour2;
+}
+.carousel .c2 {
+	background-color: $primary-colour3;
+}
+.carousel .c3 {
+	background-color: $primary-colour4;
+}
+
+.carousel-cell {
+	width: 40%;
+	padding: 20px 50px 50px 50px;
+    height: 300px;
+    margin-right: 25px;
+    background-color: $primary-colour2;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+}
+
+.flickity-page-dots{
+	// display: none;
+	text-align: center;
+	position: relative;
+
+}
+
+/* cell number */
+// .carousel-cell:before {
+//   display: block;
+//   text-align: center;
+//   content: counter(gallery-cell);
+//   line-height: 50px;
+//   font-size: 15px;
+//   font-weight: bold;
+//   color: white;
+// }
+
+@media only screen and (max-width: 840px) {
+	.carousel-cell {
+		width: 70%;
+		padding: 20px 50px 50px 50px;
+		height: 300px;
+		margin-right: 15px;
+		background-color: $primary-colour2;
+		border-radius: 5px;
+		counter-increment: gallery-cell;
+	}
+	.post-content p{
+		font-size: .9em;
+		padding: 10px;
+		text-align: left;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	
+	.post-content p{
+		font-size: .8em;
+		padding: 10px;
+		text-align: left;
+	}
+
+}
+
+@media only screen and (max-width: 550px) {
+	.carousel-cell {
+		width: 90%;
+		padding: 20px 50px 50px 50px;
+		height: 300px;
+		margin-right: 15px;
+		background-color: $primary-colour2;
+		border-radius: 5px;
+		counter-increment: gallery-cell;
+	}
+	.post-content p{
+		font-size: 12px;
+		padding: 0px;
+		font-weight: 400;
+		text-align: left;
+	}
+
 }
