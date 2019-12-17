@@ -2,6 +2,8 @@
   position: relative;
   bottom: 30px;
   color: white;
+  text-transform: uppercase;
+  font-style: normal;
 }
 
 .quote2 h5 {
@@ -223,45 +225,6 @@ h4 {
 
 .quote a {
   text-decoration: none;
-}
-
-.pocket2 {
-  width: 60%;
-  position: relative;
-  left: 40px;
-}
-
-.pocket2:hover {
-  opacity: 20%;
-}
-
-.extra {
-  position: relative;
-  bottom: 50px;
-  padding: 30px;
-  margin: 0;
-  border-radius: 15px;
-}
-
-.extra li {
-  text-align: center;
-}
-
-.box {
-  padding: 0px;
-}
-
-.box h2 {
-  text-align: left;
-  color: #1b1a1a;
-  font-size: 1.4em;
-  padding-top: 15px;
-  margin: 0;
-}
-
-.post-a {
-  position: relative;
-  left: 30px;
 }
 
 .featured-posts {
@@ -601,22 +564,9 @@ h4 {
   }
 }
 
-.about-page h3 {
-  font-size: 3.5em;
-  position: relative;
-  bottom: 20px;
-  color: #F9AF42;
-}
-
 .about-page .main-banner {
   background-size: cover;
   min-height: 430px;
-}
-
-.about-page .main-banner h3 {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 3.5em;
 }
 
 .about-page .main-banner-text h3 {
@@ -624,20 +574,11 @@ h4 {
   margin-bottom: 20px;
 }
 
-.text-box {
-  padding: 0% 25%;
-  text-align: center;
-  line-height: 20px;
-}
-
-.text-box h2 {
-  font-size: 1.0em;
-}
-
 .image-text h3 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 3em;
+  font-weight: normal;
 }
 
 .vision-banner .image-text {
@@ -654,10 +595,6 @@ h4 {
   color: white;
 }
 
-.image-text h3 {
-  font-size: 3.5em;
-}
-
 .ourwork-banner {
   background: white url(../img/about4.jpeg);
   height: 500px;
@@ -668,7 +605,7 @@ h4 {
 
 .ourwork-banner h2 {
   font-size: 3.5em;
-  color: #F9AF42;
+  color: #13A7A5;
   text-transform: uppercase;
   width: 30%;
   padding: 10%;
@@ -690,51 +627,6 @@ h4 {
 .ourwork-banner button:hover {
   background-color: #F9AF42;
   border: #D8D7D6 solid 2px;
-}
-
-.fact h3 {
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  padding: 0 20%;
-  color: rgba(36, 31, 32, 0.626);
-  font-size: 0.9em;
-  line-height: 20px;
-}
-
-.mission-text {
-  color: #13A7A5;
-  margin: 0 20%;
-}
-
-.vision-text {
-  color: #149ED3;
-  font-size: 1.1em;
-  line-height: 20px;
-}
-
-.story-text {
-  color: rgba(36, 31, 32, 0.626);
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  font-size: 0.9em;
-  line-height: 20px;
-  margin: 0 10%;
-}
-
-.about-page .text-box {
-  padding: 10%;
-}
-
-.about-page .mission-content .text-box {
-  padding: 0;
-}
-
-.mission-text {
-  padding: 8%;
-}
-
-.fact {
-  padding: 5% 3%;
 }
 
 html {
@@ -989,7 +881,6 @@ template {
   position: relative;
   bottom: 20px;
   color: black;
-  font-weight: bold;
   font-style: normal;
   letter-spacing: 2px;
   line-height: 40px;
@@ -1004,19 +895,35 @@ template {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 2em;
-  padding: 0 0;
+  padding: 0 40px;
   margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.extra {
+  width: 70%;
+  position: relative;
+  bottom: 40px;
+  border-radius: none;
+  text-align: center;
 }
 
 .pocket2 {
-  width: 60%;
-  position: relative;
-  left: -20px;
+  padding-left: 20px;
+}
+
+.pocket2:hover {
+  opacity: 20%;
 }
 
 .post-b h2 {
-  position: static;
-  text-align: left;
+  font-size: 1.3em;
+}
+
+.ourwork .carousel {
+  padding-top: 20px;
 }
 
 .repo-text {
@@ -1041,6 +948,12 @@ template {
   top: -30px;
 }
 
+.socialmedia img {
+  width: 200px;
+  height: auto;
+  display: inline-block;
+}
+
 .research-repo ul {
   text-align: left;
   list-style: none;
@@ -1052,22 +965,84 @@ template {
   margin-bottom: 50px;
 }
 
+.projects {
+  margin: 0 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
 .projects ul {
-  text-align: left;
+  text-align: center;
   list-style: none;
   display: -ms-grid;
   display: grid;
-  grid-gap: 3em;
+  grid-gap: 1em;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  padding: 10%;
   border-radius: px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.projects {
-  position: relative;
-  bottom: 200px;
+.projects li {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects li:hover {
+  opacity: 20%;
+}
+
+.projects img {
+  width: 40%;
+}
+
+@media only screen and (max-width: 900px) {
+  .pocket2 {
+    width: 55%;
+    top: 30px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .extra ul {
+    text-align: center;
+    list-style: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 2em;
+    padding: 40px;
+    margin: 0;
+  }
+  .pocket2 {
+    width: 50%;
+  }
+  .post-b h2 {
+    text-align: center;
+  }
+  .projects ul {
+    text-align: center;
+    list-style: none;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1em;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    border-radius: px;
+    margin-bottom: 10px;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 *,
@@ -1416,18 +1391,6 @@ footer {
   }
   .footer-grid-main li {
     text-align: center;
-  }
-  .projects ul {
-    text-align: left;
-    list-style: none;
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 2em;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    padding: 10px 0;
-    border-radius: px;
-    margin-bottom: 50px;
   }
   .pocket-logo img {
     position: relative;

@@ -5,27 +5,12 @@ $primary-colour4: #149ED3;
 $text-color: #D8D7D6;
 $accent-colour: gray;
 
-.about-page h3 {
-    // font-family: 'Kalam', cursive;
-    font-size: 3.5em;
-    position: relative;
-    bottom: 20px;
-    color: $primary-colour2;
-    // font-weight: 800;
-
-}
-
 .about-page .main-banner {
     // background: white url(../img/vision2.jpeg);
     background-size: cover;
     min-height: 430px;
 }
 
-.about-page .main-banner h3 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 3.5em;
-}
 
 .about-page .main-banner-text h3 {
     color: $primary-colour2;
@@ -33,21 +18,11 @@ $accent-colour: gray;
     // font-weight: 800;
 }
 
-
-.text-box {
-    padding: 0% 25%;
-    text-align: center;
-    line-height: 20px;
-}
-
-.text-box h2 {
-    font-size: 1.0em;
-}
-
 .image-text h3{
     text-align: center;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 3em;
+    font-weight: normal;
 }
 
 .vision-banner .image-text{
@@ -64,10 +39,6 @@ $accent-colour: gray;
     color: white;
 }
 
-.image-text h3{
-    font-size: 3.5em;
-}
-
 
 .ourwork-banner {
     background: white url(../img/about4.jpeg);
@@ -80,7 +51,7 @@ $accent-colour: gray;
 .ourwork-banner h2 {
     font-size: 3.5em;
     // float: left;
-    color: $primary-colour2;
+    color: $primary-colour3;
     text-transform: uppercase;
     width: 30%;
     padding: 10%;
@@ -105,51 +76,9 @@ $accent-colour: gray;
     border: #D8D7D6 solid 2px;
 }
 
-.fact h3{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    padding: 0 20%;
-    // color: #D8D7D6;
-    color: rgba(36, 31, 32, 0.626);
-    font-size: 0.9em;
-    line-height: 20px;
 
-}
 
-.mission-text {
-    color: #13A7A5;
-    margin: 0 20%;
-}
 
-.vision-text {
-    color: #149ED3;
-    font-size: 1.1em;
-    line-height: 20px;
-}
 
-.story-text {
-    // color: #149ED3;
-    color: rgba(36, 31, 32, 0.626);
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-size: 0.9em;
-    line-height: 20px;
-    margin: 0 10%;
 
-}
 
-.about-page .text-box {
-    padding: 10%;
-}
-
-.about-page .mission-content .text-box{
-    padding: 0;
-}
-
-.mission-text{
-    padding: 8%;
-}
-
-.fact {
-    padding: 5% 3%;
-}
