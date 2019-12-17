@@ -9,6 +9,8 @@ $accent-colour: gray;
 	background: white url(../img/1-f2.jpeg);
     background-size: cover;
     min-height: 430px;
+    position: relative;
+	top: -80px;
 }
 
 .our-work-page .main-banner-text h3{
@@ -17,20 +19,36 @@ $accent-colour: gray;
     // color: #241F20;
     color: black;
     // font-size: 3em;
-    // font-weight: bold;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 2px;
+    line-height: 40px;
+    text-transform: uppercase;
 }
 
+.extra ul {
+    text-align: left;
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2em;
+	padding: 0 0;
+	margin: 0;
+	// border-radius: px;
+}
 
-.pocket-grid-main {
+.pocket2 {
+    width: 60%;
     position: relative;
-    bottom: 60px;
-    margin: 0 10%;
+    left: -20px;
 }
 
-.pocket-logo img{
-    position: relative;
-    bottom: 30px;
+.post-b h2 {
+    position: static;
+    text-align: left;
+    // display:;
 }
+
 
 .repo-text {
     // background-color: #13A7A5;

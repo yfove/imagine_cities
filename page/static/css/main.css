@@ -24,6 +24,8 @@
   max-width: 100%;
   background-size: cover;
   min-height: 430px;
+  position: relative;
+  top: -80px;
 }
 
 .bottom-img img {
@@ -47,8 +49,8 @@
   display: -ms-grid;
   display: grid;
       grid-template-areas: "post1 post2" "post3 post2";
-  grid-gap: 0em;
-  padding: 20px;
+  grid-gap: 1em;
+  padding: 40px;
 }
 
 .box {
@@ -115,7 +117,7 @@
 }
 
 .main-banner {
-  min-height: 600px;
+  min-height: 500px;
   max-width: 100%;
   background: white url(../img/Homepage.png);
   background-size: cover;
@@ -131,8 +133,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  top: -80px;
   z-index: 1;
 }
 
@@ -210,52 +210,68 @@ h4 {
   padding-bottom: 40px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   position: relative;
-  bottom: -30px;
+  bottom: 50px;
 }
 
 .quote {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  bottom: 70px;
 }
 
 .quote a {
   text-decoration: none;
 }
 
+.pocket2 {
+  width: 60%;
+  position: relative;
+  left: 40px;
+}
+
+.pocket2:hover {
+  opacity: 20%;
+}
+
 .extra {
   position: relative;
   bottom: 50px;
-  padding: 0;
+  padding: 30px;
   margin: 0;
-  border: solid 2px black;
+  border-radius: 15px;
+}
+
+.extra li {
+  text-align: center;
 }
 
 .box {
-  padding: 30px;
+  padding: 0px;
+}
+
+.box h2 {
+  text-align: left;
+  color: #1b1a1a;
+  font-size: 1.4em;
+  padding-top: 15px;
+  margin: 0;
+}
+
+.post-a {
+  position: relative;
+  left: 30px;
 }
 
 .featured-posts {
   text-align: center;
   display: block;
-  position: relative;
-  top: -30px;
-}
-
-.featured-posts ul {
-  text-align: left;
-  list-style: none;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1em;
-  padding: 15px 0;
 }
 
 .featured-posts h2 {
-  font-size: 1.2em;
-  margin-bottom: 2em;
+  font-size: 1.5em;
+  padding: 30px;
 }
 
 .post-content h3 {
@@ -321,7 +337,13 @@ h4 {
 .newsletter {
   padding: 0;
   margin: 0;
-  position: static;
+  position: relative;
+  bottom: 100px;
+}
+
+.newsletter h3 {
+  font-size: 1.4em;
+  margin: 20px;
 }
 
 .newsletter-grid-main {
@@ -329,7 +351,7 @@ h4 {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
+  grid-gap: 2.5em;
   margin: 0em;
   margin-bottom: 80px;
   padding: 0px;
@@ -471,6 +493,7 @@ h4 {
 .carousel {
   background: rgba(250, 246, 235, 0.39);
   padding: 50px;
+  margin: 0 20px;
   margin-bottom: 15%;
 }
 
@@ -505,7 +528,22 @@ h4 {
 }
 
 /* cell number */
+.featured-posts ul {
+  text-align: left;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 4em;
+  padding: 0 0;
+  margin: 0;
+}
+
 @media only screen and (max-width: 940px) {
+  .extra {
+    position: static;
+  }
   .carousel-cell {
     width: 55%;
     padding: 50px 30px 10px 30px;
@@ -546,14 +584,20 @@ h4 {
     counter-increment: gallery-cell;
   }
   .post-content p {
-    font-size: 13px;
-    padding: 20px 0px;
+    font-size: 10px;
+    padding: 0px 0px;
     font-weight: 400;
     text-align: left;
   }
   .post-content h3 {
     margin-bottom: 10px;
+    margin-top: 20px;
     font-size: 1.1em;
+  }
+  .post-b h2 {
+    position: static;
+    text-align: center;
+    line-height: 20px;
   }
 }
 
@@ -937,23 +981,42 @@ template {
   background: white url(../img/1-f2.jpeg);
   background-size: cover;
   min-height: 430px;
+  position: relative;
+  top: -80px;
 }
 
 .our-work-page .main-banner-text h3 {
   position: relative;
   bottom: 20px;
   color: black;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 2px;
+  line-height: 40px;
+  text-transform: uppercase;
 }
 
-.pocket-grid-main {
-  position: relative;
-  bottom: 60px;
-  margin: 0 10%;
+.extra ul {
+  text-align: left;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  padding: 0 0;
+  margin: 0;
 }
 
-.pocket-logo img {
+.pocket2 {
+  width: 60%;
   position: relative;
-  bottom: 30px;
+  left: -20px;
+}
+
+.post-b h2 {
+  position: static;
+  text-align: left;
 }
 
 .repo-text {
@@ -1281,7 +1344,7 @@ footer {
 }
 
 /* mobile */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 740px) {
   body {
     background-color: whitesmoke;
   }
