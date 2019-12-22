@@ -2,6 +2,8 @@
   position: relative;
   bottom: 30px;
   color: white;
+  text-transform: uppercase;
+  font-style: normal;
 }
 
 .quote2 h5 {
@@ -24,6 +26,8 @@
   max-width: 100%;
   background-size: cover;
   min-height: 430px;
+  position: relative;
+  top: -80px;
 }
 
 .bottom-img img {
@@ -47,8 +51,8 @@
   display: -ms-grid;
   display: grid;
       grid-template-areas: "post1 post2" "post3 post2";
-  grid-gap: 0em;
-  padding: 20px;
+  grid-gap: 1em;
+  padding: 40px;
 }
 
 .box {
@@ -115,7 +119,7 @@
 }
 
 .main-banner {
-  min-height: 600px;
+  min-height: 500px;
   max-width: 100%;
   background: white url(../img/Homepage.png);
   background-size: cover;
@@ -131,8 +135,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  top: -80px;
   z-index: 1;
 }
 
@@ -210,52 +212,29 @@ h4 {
   padding-bottom: 40px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   position: relative;
-  bottom: -30px;
+  bottom: 50px;
 }
 
 .quote {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  bottom: 70px;
 }
 
 .quote a {
   text-decoration: none;
 }
 
-.extra {
-  position: relative;
-  bottom: 50px;
-  padding: 0;
-  margin: 0;
-  border: solid 2px black;
-}
-
-.box {
-  padding: 30px;
-}
-
 .featured-posts {
   text-align: center;
   display: block;
-  position: relative;
-  top: -30px;
-}
-
-.featured-posts ul {
-  text-align: left;
-  list-style: none;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1em;
-  padding: 15px 0;
 }
 
 .featured-posts h2 {
-  font-size: 1.2em;
-  margin-bottom: 2em;
+  font-size: 1.5em;
+  padding: 30px;
 }
 
 .post-content h3 {
@@ -321,7 +300,13 @@ h4 {
 .newsletter {
   padding: 0;
   margin: 0;
-  position: static;
+  position: relative;
+  bottom: 100px;
+}
+
+.newsletter h3 {
+  font-size: 1.4em;
+  margin: 20px;
 }
 
 .newsletter-grid-main {
@@ -329,7 +314,7 @@ h4 {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
+  grid-gap: 2.5em;
   margin: 0em;
   margin-bottom: 80px;
   padding: 0px;
@@ -471,6 +456,7 @@ h4 {
 .carousel {
   background: rgba(250, 246, 235, 0.39);
   padding: 50px;
+  margin: 0 20px;
   margin-bottom: 15%;
 }
 
@@ -505,7 +491,22 @@ h4 {
 }
 
 /* cell number */
+.featured-posts ul {
+  text-align: left;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 4em;
+  padding: 0 0;
+  margin: 0;
+}
+
 @media only screen and (max-width: 940px) {
+  .extra {
+    position: static;
+  }
   .carousel-cell {
     width: 55%;
     padding: 50px 30px 10px 30px;
@@ -546,22 +547,21 @@ h4 {
     counter-increment: gallery-cell;
   }
   .post-content p {
-    font-size: 13px;
-    padding: 20px 0px;
+    font-size: 10px;
+    padding: 0px 0px;
     font-weight: 400;
     text-align: left;
   }
   .post-content h3 {
     margin-bottom: 10px;
+    margin-top: 20px;
     font-size: 1.1em;
   }
-}
-
-.about-page h3 {
-  font-size: 3.5em;
-  position: relative;
-  bottom: 20px;
-  color: #F9AF42;
+  .post-b h2 {
+    position: static;
+    text-align: center;
+    line-height: 20px;
+  }
 }
 
 .about-page .main-banner {
@@ -569,31 +569,16 @@ h4 {
   min-height: 430px;
 }
 
-.about-page .main-banner h3 {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 3.5em;
-}
-
 .about-page .main-banner-text h3 {
   color: #F9AF42;
   margin-bottom: 20px;
 }
 
-.text-box {
-  padding: 0% 25%;
-  text-align: center;
-  line-height: 20px;
-}
-
-.text-box h2 {
-  font-size: 1.0em;
-}
-
 .image-text h3 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 3em;
+  font-weight: normal;
 }
 
 .vision-banner .image-text {
@@ -610,44 +595,46 @@ h4 {
   color: white;
 }
 
-.image-text h3 {
-  font-size: 3.5em;
-}
-
-.ourwork-banner {
+.ourwork-banner{
   background: white url(../img/about4.jpeg);
-  height: 500px;
-  background-size: cover;
+  height: 650px;
+  background-size: 100%;
   background-repeat: no-repeat;
-  max-width: 100%;
+  max-width: 90%;
+  margin-bottom: 100px;
+  margin: 0 auto;
+  
 }
 
 .ourwork-banner h2 {
-  font-size: 3.5em;
-  color: #F9AF42;
+  font-size: 4em;
+  color: #13A7A5;
   text-transform: uppercase;
-  width: 30%;
-  padding: 10%;
-  opacity: 70%;
+  width: 35%;
+  padding: 5%;
+  letter-spacing: 8px;
 }
 
 .ourwork-banner .btn {
   background-color: #13A7A5;
   border: none;
   color: azure;
-  padding: 2em 1em;
-  border-radius: 8px;
+  padding: 1em 0.5em;
+  border-radius: 10px;
   position: relative;
-  left: 300px;
-  top: -200px;
+  left: 5%;
+  /* top: -200px; */
   font-weight: bold;
+  font-size: 30px;
 }
 
 .ourwork-banner button:hover {
   background-color: #F9AF42;
-  border: #D8D7D6 solid 2px;
+  /* border: #D8D7D6 solid 2px; */
+  color: #000;
 }
 
+<<<<<<< HEAD
 .fact h3 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -747,6 +734,8 @@ text-align: left;
   padding: 5% 3%;
 }
 
+=======
+>>>>>>> 3576dc2664f876834222bba93579439f73427840
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -991,23 +980,57 @@ template {
   background: white url(../img/1-f2.jpeg);
   background-size: cover;
   min-height: 430px;
+  position: relative;
+  top: -80px;
 }
 
 .our-work-page .main-banner-text h3 {
   position: relative;
-  bottom: 20px;
+  bottom: -5px;
   color: black;
+  font-style: normal;
+  letter-spacing: 2px;
+  line-height: 40px;
+  text-transform: uppercase;
 }
 
-.pocket-grid-main {
-  position: relative;
-  bottom: 60px;
-  margin: 0 10%;
+.extra ul {
+  text-align: left;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  padding: 0 40px;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.pocket-logo img {
+.extra {
+  width: 70%;
   position: relative;
-  bottom: 30px;
+  bottom: 40px;
+  border-radius: none;
+  text-align: center;
+}
+
+.pocket2 {
+  padding-left: 20px;
+}
+
+.pocket2:hover {
+  opacity: 20%;
+}
+
+.post-b h2 {
+  font-size: 1.3em;
+}
+
+.ourwork .carousel {
+  padding-top: 20px;
 }
 
 .repo-text {
@@ -1032,6 +1055,12 @@ template {
   top: -30px;
 }
 
+.socialmedia img {
+  width: 200px;
+  height: auto;
+  display: inline-block;
+}
+
 .research-repo ul {
   text-align: left;
   list-style: none;
@@ -1043,22 +1072,84 @@ template {
   margin-bottom: 50px;
 }
 
+.projects {
+  margin: 0 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
 .projects ul {
-  text-align: left;
+  text-align: center;
   list-style: none;
   display: -ms-grid;
   display: grid;
-  grid-gap: 3em;
+  grid-gap: 1em;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  padding: 10%;
   border-radius: px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.projects {
-  position: relative;
-  bottom: 200px;
+.projects li {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects li:hover {
+  opacity: 20%;
+}
+
+.projects img {
+  width: 40%;
+}
+
+@media only screen and (max-width: 900px) {
+  .pocket2 {
+    width: 55%;
+    top: 30px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .extra ul {
+    text-align: center;
+    list-style: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 2em;
+    padding: 40px;
+    margin: 0;
+  }
+  .pocket2 {
+    width: 50%;
+  }
+  .post-b h2 {
+    text-align: center;
+  }
+  .projects ul {
+    text-align: center;
+    list-style: none;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1em;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    border-radius: px;
+    margin-bottom: 10px;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 *,
@@ -1335,7 +1426,7 @@ footer {
 }
 
 /* mobile */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 740px) {
   body {
     background-color: whitesmoke;
   }
@@ -1389,40 +1480,51 @@ footer {
   }
   /* ABOUT SECTION */
   .aboutus img{
-    width: 100%;
-    height: auto;
-    padding: 30px;
+    display: none;
   }
   #overlay, #overlay1, #overlay2{
-    width: 100%;
-    height: auto;
-    padding: 30px;
+    display: none;
   }
   .aboutus-text{
-    flex-wrap: wrap;
-    padding: 0 20%;
+    /* flex-wrap: wrap; */
+    margin: 0 auto;
   }
   .mission-content h1{
     font-size: 1.8em;
   }
   .mission-text{
-    padding: 0 30px 30px;
+    padding: 0;
   }
   .mission-text h2{
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-size: 1.5em;
   }
   .aboutus-text p{
-    text-align: left;
-    padding: 0;
+    text-align: left;    
     font-size: 16px;
   }
-
+  .ourwork-banner {
+    background: none;
+    margin-bottom: -400px;
+  }  
   .ourwork-banner a {
     position: relative;
     top: 60px;
     right: 100px;
   }
+  .ourwork-banner h2 {
+    font-size: 2em;
+    width: 100%;
+    padding: 5%;
+    margin-bottom: -60px;
+  }
+   .ourwork-banner .btn {
+     padding: 0.5em;
+     width: 50%;
+     left: 50%;
+     font-size: 16px;
+   }
+   
   .featured-posts ul {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1438,18 +1540,6 @@ footer {
   }
   .footer-grid-main li {
     text-align: center;
-  }
-  .projects ul {
-    text-align: left;
-    list-style: none;
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 2em;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    padding: 10px 0;
-    border-radius: px;
-    margin-bottom: 50px;
   }
   .pocket-logo img {
     position: relative;

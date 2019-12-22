@@ -9,28 +9,48 @@
             <h3>Programs and Projects</h3>
         </div>
     </div>
-    <section class="pocket-grid-main">
-        <!-- join-grid -->
-        <ul class="blog-grid">
-            <li class="post post1 box">
-                <div class="pocket-logo">
-                    <a href="https://getpocket.com/@imaginecities"><img src="{% static 'img/pocket1.png' %}" alt="logo" /></a>
+
+    </section>
+    <div class="extra wrapper">
+        <ul>
+            <li class="post-a box" data-aos="fade-down" data-aos-duration="1800">
+                <div class="post-content">
+                    <a href="https://getpocket.com/@imaginecities"> <img src="{% static 'img/Pocket1.png' %}" alt="logo"
+                            class="pocket2" /></a>
+
+                    <!-- <a href="https://www.instagram.com/imaginecities/"><i class="fab fa-instagram icon"></i></a> -->
                 </div>
             </li>
-            <li class="post post2 box">
-                <div class="propellus-text">
-                    <h4>Reasearch Repository</h4>
-                    <h3>We Collect and share city building research from across the world. We follow a wide range of
-                        research
-                        organizations, collect interdisciplinary research across 22 different categories, and share the
-                        research
-                        on social media platforms
-                    </h3>
+            <li class="post-b box" data-aos="fade-down" data-aos-duration="1800">
+                <div class="post-content">
+                    <!-- <a href="https://www.instagram.com"><i class="far fa-user icon"></i></a> -->
+                    <h2>We Collect and share city building research from across the world. We follow a wide range of
+                        research organizations, collect interdisciplinary research across 22 different categories, and
+                        share the
+                        research on social media platforms</h2>
                 </div>
             </li>
         </ul>
-        <!-- blog grid ends -->
+    </div>
+    <section class="projects"  data-aos="zoom-in" data-aos-duration="1800">
+        <div class="s-icons">
+            <ul>
+                <li class="icn">
+                    <a href="https://www.instagram.com/imaginecities/" target="_blank"><img
+                            src="{% static 'img/Instagram-4@2x.png' %}" alt="logo" /></a>
+                </li>
+                <li class="icn">
+                    <a href="https://twitter.com/imaginecities/" target="_blank"><img
+                            src="{% static 'img/Twitter-4@2x.png' %}" alt="logo" /></a>
+                </li>
+                <li class="icn">
+                    <a href="https://https://medium.com/imagine-cities" target="_blank"><img
+                            src="{% static 'img/Medium-4@2x.png' %}" alt="logo" /></a>
+                </li>
+            </ul>
+        </div>
     </section>
+    <!-- wrapper end -->
     <!-- <section class="research-repo">
         <ul>
             <li>
@@ -51,51 +71,42 @@
             </li>
         </ul>
     </section> -->
-
-    <!-- featured posts -->
-    <div class="ourwork">
-        <section class="projects">
-        <div class="wrapper">
-                <ul>
-                    <li class="project-type">
-                        <a href="https://www.instagram.com/imaginecities/" target="_blank"><img
-                                src="{% static 'img/Instagram-4@2x.png' %}" alt="logo" /></a>
-                        <div class="project-type-a box">
-                            <h3>Year In Review </h3>
-                            <p>The Year in Review highlights the best of the best. We pull together the most innovative
-                                and unique pieces of research that are solving city problems from our research
-                                repository using a defined criteria. To explore this annual collection follow us on
-                                Instragram @imaginecities.</p>
-                        </div>
-                    </li>
-                    <li class="project-type">
-                        <a href="https://twitter.com/imaginecities/" target="_blank"><img
-                                src="{% static 'img/Twitter-4@2x.png' %}" alt="logo" /></a>
-                        <div class="project-type-b box">
-                            <h3>Speaker Series</h3>
-                            <p>Our community of engaged citizens includes many inspiring and creative innovators who
-                                challenge the status quo in an effort to build better cities. Our speaker series allows
-                                all of us to learn more about city building, celebrate impact and consider how we can
-                                each contribute to our city. Sign up for our newsletter to stay looped</p>
-                        </div>
-                    </li>
-                    <li class="project-type">
-                        <a href="https://https://medium.com/imagine-cities" target="_blank"><img
-                                src="{% static 'img/Medium-4@2x.png' %}" alt="logo" /></a>
-                        <div class="project-type-c box">
-                            <h3>Short Stories</h3>
-                            <p>Throughout the year we curate and show collections of short films from our research
-                                repository that highlight interesting perspectives about city building. The topics we
-                                choose aim to align with the most important urban issues of the moment, spark
-                                discussion, and connect city-builders. Join us at our next event to view, connect and
-                                converse.</p>
-                        </div>
-                    </li>
-                </ul>
+    <section class="featured-posts ourwork" id="move">
+        <h2>OUR PROJECTS</h2>
+        <div class="carousel" data-flickity='{"autoPlay": true }'>
+            <div class="carousel-cell c1" data-aos="zoom-in" data-aos-duration="800">
+                <div class="post-content">
+                    <h3>Short Stories <a href="https://www.youtube.com"><i class="fab fa-youtube icon"></i></a>
+                    </h3>
+                    <p>Throughout the year we curate and show collections of short films from our research repository
+                        that highlight interesting perspectives about city building. The topics we choose aim to align
+                        with the most important urban issues of the moment, spark discussion, and connect city-builders.
+                        Join us at our next event to view, connect and converse.</p>
+                </div>
             </div>
-        </section>
-    </div><!-- wrapper end -->
-    <!-- </section>featured posts end -->
+            <div class="carousel-cell c2" data-aos="zoom-in" data-aos-duration="800">
+                <div class="post-content">
+                    <h3>Year In Review <a href="https://www.instagram.com/imaginecities/"><i
+                                class="fab fa-instagram icon"></i></a>
+                    </h3>
+                    <p>The Year in Review highlights the best of the best. We pull together the most innovative and
+                        unique pieces of research that are solving city problems from our research repository using a
+                        defined criteria. To explore this annual collection follow us on Instragram</p>
+                </div>
+            </div>
+            <div class="carousel-cell c3" data-aos="zoom-in" data-aos-duration="800">
+                <div class="post-content">
+                    <h3>Speaker Series<a href="https://www.instagram.com"><i class="far fa-user icon"></i></a></h3>
+                    <p>Our community of engaged citizens includes many inspiring and creative innovators who challenge
+                        the status quo in an effort to build better cities. Our speaker series allows all of us to learn
+                        more about city building, celebrate impact and consider how we can each contribute to our city.
+                        Sign up for our newsletter!</p>
+                </div>
+            </div>
+
+        </div>
+
+    
 </main>
-<h1>.</h1>
+
 {% endblock %}
