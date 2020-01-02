@@ -4,50 +4,54 @@
 {% block content %}
 <main class="about-page">
     <div class="mission-content">
-        <div class="main-banner box">
-            <div class="main-banner-text">
-                <h3>Our Story</h3>
+        <h1>About Us</h1>
+    </div>
+    <section class="aboutus">
+        <article class="aboutus-text">
+            <div id="overlay"></div>
+            <img src="{% static 'img/about3.jpxg.jpeg'%}" alt="mission">
+            <div class="mission-text">
+                <h2>mission</h2>
+                <p>We inform the public, inspire action, and act as a catalyst for creating collaborative solutions that guide
+                cities through a rapidly urbanizing</p>
             </div>
-        </div>
-        <div class="mission-text text-box">
-            <h2>We inform the public, inspire action, and act as a catalyst for creating collaborative solutions that guide
-                cities through a rapidly urbanizing</h2>
-        </div>
-        <div class="fact">
-            <!-- <h3>The importance of cities has grown to such an extent that they have become centres for global markets, higher education, culture and innovation with two leading cities, Hong Kong and Singapore, operating outside the jurisdiction of a national government. Over half of the world’s population lives in cities and produce 80% of the world’s economic activity. As the centre of global growth shifts towards Asia, Africa and South America, it’s expected that one out of three cities in the developed world will drop out of the top 600 urban economies while 136 new cities will enter the fold. Consider that Shenzhen was a fishing village in 1980 but now produces the third highest GDP in China. <br><br></h3> -->
-            <h3>The way we choose to build our cities will be central to our ability to compete as we transition through the 4th industrial period. With finite resources at our disposal, urban leaders are turning to data and science to find the insight needed to make better investments that produce more significant systemic outcomes. This new age of urbanism has led us to better understand how green space can improve our mental health, the significant toll long commuting times can take our physical health, the role of quality neighbourhoods in improving economic mobility, and how buildings can positively influence the way we feel, think, and even spend.</h3>
-        </div>
-    </div>
-    
-    <div class="vision-banner box">
-        <div class="image-text">
-            <h3>Our Vision</h3>
-        </div>
-        <div class="vision-text text-box">
-            <h2>We envision cities as vibrant inclusive spaces where engaged residents are informed and inspired to
-                build smart urban solutions. These cities enable residents to contribute to the social fabric of their
-                communities and foster opportunities. belonging and happiness</h2>
-            </div>
-    </div>
-    <div class="story-banner box">
-        <div class="image-text">
-            <h3>Research & Data</h3>
-        </div>
-        <div class="story-text text-box">
-            <h2>This emergence of a wealth of datasets from an ever growing number of sources serves as a powerful tool
-                that will enable cities to better understand and adapt to rapidly changing urban environments. The
-                ability to compare the competitiveness of cities has led to an increasing use of indexes such as the
-                MIT’s Global Mobility Index, the Government of Canada’s Neighbourhood Financial Health Index, and City
-                Observatory’s Storefront Index. These indexes bring data to life to better understand the systems
-                shaping urban life. These datasets are not only being used by governments and NGOs, but also a global
-                network of investors to determine which cities to invest in and where to pull investment out of. <br><br>
-            </h2>
-            </div>
-    </div>
-    <div class="ourwork-banner box">
-        <h2>what we've been up to</h2>
-        <a href="{% url 'ourwork' %}"><button class="btn">SEE OUR WORK</button></a>
-    </div>
+        </article>
+    </section>
+    <section class="aboutus">
+            <article class="aboutus-text vision">
+                <div id="overlay1"></div>
+                <img src="{% static 'img/about2.jpeg'%}" alt="vision">
+                <div class="mission-text">
+                    <h2>vision</h2>
+                    <p>We envision cities as vibrant inclusive spaces where engaged residents are informed and inspired to
+                            build smart urban solutions. These cities enable residents to contribute to the social fabric of their
+                            communities and foster opportunities. belonging and happiness</h2>
+                     </p>
+                </div>
+            </article>
+        </section>
+    <section class="aboutus">
+        <article class="aboutus-text story">
+                <div class="mission-text">
+                        <h2>our story</h2>
+                        <p>This emergence of a wealth of datasets from an ever growing number of sources serves as a powerful tool
+                            that will enable cities to better understand and adapt to rapidly changing urban environments. The
+                            ability to compare the competitiveness of cities has led to an increasing use of indexes such as the
+                            MIT’s Global Mobility Index, the Government of Canada’s Neighbourhood Financial Health Index, and City
+                            Observatory’s Storefront Index. These indexes bring data to life to better understand the systems
+                            shaping urban life. These datasets are not only being used by governments and NGOs, but also a global
+                            network of investors to determine which cities to invest in and where to pull investment out of. <br><br>
+                        </p>
+                    </div>               
 
+                <img src="{% static 'img/1-f2.jpeg'%}" alt="our story">
+                <div id="overlay2"></div>
+        </article>
+    </section>   
+    <div class="ourwork-banner box">
+        <h2>See what we've been up to</h2>
+        <a href="{% url 'ourwork' %}"><button class="btn">OUR WORK</button></a>
+    </div>       
+   
 </main>
 {% endblock %}
