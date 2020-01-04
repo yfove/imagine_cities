@@ -168,9 +168,12 @@ footer {
 }
 
 .footer-nav a {
+	font-size: 1.4em;
 	text-decoration: none;
 	font-weight: bold;
 	text-transform: uppercase;
+	position: relative;
+	top: 20px;
 }
 
 .footer-nav a:hover {
@@ -199,11 +202,30 @@ footer {
 	font-weight: bold;
 }
 
+.footer-desc p {
+	color: $primary-colour2;
+	font-size: 1.2em;
+}
+
+.submit_container input{
+	padding: 8px 80px;
+	margin-top: 10px;
+	background-color: #F9AF42;
+	color: white;
+	border: none;
+	font-weight: bold;
+}
+
+.submit_container input:hover{
+	background-color: $primary-colour3;
+	color: whitesmoke;
+}
+
 .copyright p {
 	float: right;
 	position: relative;
-	left: 230px;
-	top: 13px;
+	left: 250px;
+	top: 20px;
 	color: #F6F7F9;
 	font-size: .6em;
 }
