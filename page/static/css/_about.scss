@@ -4,7 +4,9 @@ $primary-colour3: #13A7A5;
 $primary-colour4: #149ED3;
 $text-color: #D8D7D6;
 $accent-colour: gray;
-
+.about-page {
+    overflow: hidden;
+}
 .about-page h1 {
     text-align: center;
     font-size: 2.5em;

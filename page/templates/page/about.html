@@ -3,17 +3,17 @@
 {% load static %}
 
 {% block content %}
-<main class="about-page">
+<main class="about-page" >
     <div class="mission-content">
         <h1>About Us</h1>
     </div>
-    <section class="aboutus about1">
+    <section class="aboutus about1" >
         <article class="aboutus-text">
-            <div class="artboard1">
+            <div class="artboard1" data-aos="fade-right" data-aos-duration="1800">
                 <img src="{% static 'img/artboard3.png'%}" alt="mission">
             </div>
-            <div class="mission-text">
-                <h2>mission</h2>
+            <div class="mission-text" data-aos="fade-up" data-aos-duration="1800">
+                <h2>Mission</h2>
                 <p>We inform the public, inspire action, and act as a catalyst for creating collaborative solutions that
                     guide
                     cities through a rapidly urbanizing</p>
@@ -22,11 +22,11 @@
     </section>
     <section class="aboutus about2">
         <article class="aboutus-text vision">
-            <div class="artboard2">
+            <div class="artboard2" data-aos="fade-right" data-aos-duration="1800">
                 <img src="{% static 'img/artboard2.png'%}" alt="vision">
             </div>
-            <div class="mission-text">
-                <h2>vision</h2>
+            <div class="mission-text" data-aos="fade-up" data-aos-duration="1800">
+                <h2>Vision</h2>
                 <p>We envision cities as vibrant inclusive spaces where engaged residents are informed and inspired to
                     build smart urban solutions. These cities enable residents to contribute to the social fabric of
                     their
@@ -37,11 +37,11 @@
     </section>
     <section class="aboutus about3">
         <article class="aboutus-text story">
-            <div class="artboard3">
+            <div class="artboard3" data-aos="fade-right" data-aos-duration="1800">
                 <img src="{% static 'img/Artboard4.png'%}" alt="our story">
             </div>
-            <div class="mission-text2">
-                <h2>our story</h2>
+            <div class="mission-text2" data-aos="fade-left" data-aos-duration="1800">
+                <h2>Our Story</h2>
                 <p>The way we choose to build our cities will be central to our ability to compete as we transition through the 4th industrial period. With finite resources at our disposal, urban leaders are turning to data and science to find the insight needed to make better investments that produce more significant systemic outcomes.</p>
             </div>
         </article>
@@ -51,7 +51,7 @@
             <h2>Take a look at our work and</h2>
             <!-- <p>hello this is the new section</p> -->
     
-            <a href="{% url 'ourwork' %}" class="bn">See What We've Been Up To</a>
+            <a href="{% url 'ourwork' %}" class="bn" data-aos="fade-down" data-aos-duration="1800">See What We've Been Up To</a>
             <br>
         </div>
     </section>
