@@ -5,80 +5,132 @@ $primary-colour4: #149ED3;
 $text-color: #D8D7D6;
 $accent-colour: gray;
 
-.about-page .main-banner {
-    // background: white url(../img/vision2.jpeg);
-    background-size: cover;
-    min-height: 430px;
-}
-
-
-.about-page .main-banner-text h3 {
-    color: $primary-colour2;
-    margin-bottom: 20px;
-    // font-weight: 800;
-}
-
-.image-text h3{
+.about-page h1 {
     text-align: center;
-    text-transform: uppercase;
-    font-size: 3em;
-    font-weight: normal;
+    font-size: 2.5em;
+    padding: 0;
+    margin: 20px 0 0 0;
 }
 
-.vision-banner .image-text{
-    background: white url(../img/vision1.jpeg);
-    background-size: cover;
-    padding: 14%;
-    color: white;
+.about-page h2 {
+    font-size: 2em;
+    padding-bottom: 20px;
+    color: $primary-colour2;
 }
 
-.story-banner .image-text{
-    background: white url(../img/about3.jpeg);
-    background-size: cover;
-    padding: 14%;
-    color: white;
-}
-
-
-.ourwork-banner {
-    background: white url(../img/about4.jpeg);
-    height: 500px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 100%;
-}
-
-.ourwork-banner h2 {
-    font-size: 3.5em;
-    // float: left;
+.about2 h2 {
     color: $primary-colour3;
-    text-transform: uppercase;
-    width: 30%;
-    padding: 10%;
-    opacity: 70%;
 }
 
-.ourwork-banner .btn{
-    background-color: #13A7A5;
-    border: none;
-    color: azure;
-    padding: 2em 1em;
-    border-radius: 8px;
+.about3 h2 {
+    color: $primary-colour4;
+}
+
+.about-page p {
+    font-size: 1em;
+    color: $primary-colour;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+}
+
+
+.aboutus img{
+    width: 70%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    float: left;
+}
+
+.about3 img {
+    float: right;
+}
+
+.aboutus-text {
+    float: right;
+    padding-top: 20px;
     position: relative;
-    left: 300px;
-    top: -200px;
+    top: 20px;
+}
+
+.mission-text {
+    position: relative;
+    top: 50px;
+    right: 100px;
+}
+
+.mission-text2 {
+    position: relative;
+    top: 30px;
+    left: 100px;
+}
+
+.seeourwork {
+    text-align: center;
+    margin: 20%;
+    position: relative;
+    top: 80px;
+}
+
+.seeourwork .bn {
+    color: $primary-colour3;
+    font-size: 4em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.seeourwork a:hover {
+    color: $primary-colour2;
+    font-size: 4em;
+    text-decoration: none;
     font-weight: bold;
 }
 
 
-.ourwork-banner button:hover{
-    background-color: #F9AF42;
-    border: #D8D7D6 solid 2px;
+@media only screen and (max-width: 800px) {
+
+.aboutus {
+    padding: 10%;
+}
+
+.aboutus img{
+    display: none;
+}
+
+.about3 img {
+    display: none;
+}
+
+.aboutus-text {
+    float: none;
+    text-align: center;
+    position: static;
+}
+
+.mission-text {
+   float: none;
+   text-align: center;
+   position: static;
+}
+
+.mission-text2 {
+    position: static
+}
+
+.seeourwork {
+    text-align: center;
+    margin: 20%;
+    position: static;
+    // top: 80px;
+}
+
+.seeourwork .bn {
+    color: $primary-colour3;
+    font-size: 4em;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 
 
-
-
-
-
+}

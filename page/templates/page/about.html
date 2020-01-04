@@ -1,4 +1,5 @@
 {% extends 'page/base.html' %}
+
 {% load static %}
 
 {% block content %}
@@ -6,52 +7,54 @@
     <div class="mission-content">
         <h1>About Us</h1>
     </div>
-    <section class="aboutus">
+    <section class="aboutus about1">
         <article class="aboutus-text">
-            <div id="overlay"></div>
-            <img src="{% static 'img/about3.jpxg.jpeg'%}" alt="mission">
+            <div class="artboard1">
+                <img src="{% static 'img/artboard3.png'%}" alt="mission">
+            </div>
             <div class="mission-text">
                 <h2>mission</h2>
-                <p>We inform the public, inspire action, and act as a catalyst for creating collaborative solutions that guide
-                cities through a rapidly urbanizing</p>
+                <p>We inform the public, inspire action, and act as a catalyst for creating collaborative solutions that
+                    guide
+                    cities through a rapidly urbanizing</p>
             </div>
         </article>
     </section>
-    <section class="aboutus">
-            <article class="aboutus-text vision">
-                <div id="overlay1"></div>
-                <img src="{% static 'img/about2.jpeg'%}" alt="vision">
-                <div class="mission-text">
-                    <h2>vision</h2>
-                    <p>We envision cities as vibrant inclusive spaces where engaged residents are informed and inspired to
-                            build smart urban solutions. These cities enable residents to contribute to the social fabric of their
-                            communities and foster opportunities. belonging and happiness</h2>
-                     </p>
-                </div>
-            </article>
-        </section>
-    <section class="aboutus">
-        <article class="aboutus-text story">
-                <div class="mission-text">
-                        <h2>our story</h2>
-                        <p>This emergence of a wealth of datasets from an ever growing number of sources serves as a powerful tool
-                            that will enable cities to better understand and adapt to rapidly changing urban environments. The
-                            ability to compare the competitiveness of cities has led to an increasing use of indexes such as the
-                            MIT’s Global Mobility Index, the Government of Canada’s Neighbourhood Financial Health Index, and City
-                            Observatory’s Storefront Index. These indexes bring data to life to better understand the systems
-                            shaping urban life. These datasets are not only being used by governments and NGOs, but also a global
-                            network of investors to determine which cities to invest in and where to pull investment out of. <br><br>
-                        </p>
-                    </div>               
-
-                <img src="{% static 'img/1-f2.jpeg'%}" alt="our story">
-                <div id="overlay2"></div>
+    <section class="aboutus about2">
+        <article class="aboutus-text vision">
+            <div class="artboard2">
+                <img src="{% static 'img/artboard2.png'%}" alt="vision">
+            </div>
+            <div class="mission-text">
+                <h2>vision</h2>
+                <p>We envision cities as vibrant inclusive spaces where engaged residents are informed and inspired to
+                    build smart urban solutions. These cities enable residents to contribute to the social fabric of
+                    their
+                    communities and foster opportunities. belonging and happiness</h2>
+                </p>
+            </div>
         </article>
-    </section>   
-    <div class="ourwork-banner box">
-        <h2>See what we've been up to</h2>
-        <a href="{% url 'ourwork' %}"><button class="btn">OUR WORK</button></a>
-    </div>       
-   
+    </section>
+    <section class="aboutus about3">
+        <article class="aboutus-text story">
+            <div class="artboard3">
+                <img src="{% static 'img/Artboard4.png'%}" alt="our story">
+            </div>
+            <div class="mission-text2">
+                <h2>our story</h2>
+                <p>The way we choose to build our cities will be central to our ability to compete as we transition through the 4th industrial period. With finite resources at our disposal, urban leaders are turning to data and science to find the insight needed to make better investments that produce more significant systemic outcomes.</p>
+            </div>
+        </article>
+    </section>
+    <section class="seeourwork">
+        <div class="seeourwok">
+            <h2>Take a look at our work and</h2>
+            <!-- <p>hello this is the new section</p> -->
+    
+            <a href="{% url 'ourwork' %}" class="bn">See What We've Been Up To</a>
+            <br>
+        </div>
+    </section>
+
 </main>
 {% endblock %}
