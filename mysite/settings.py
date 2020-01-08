@@ -25,7 +25,7 @@ SECRET_KEY = 'x^6=qx-r-_5vomd_%*g+l8sg-e2izue=sta!gnzuug0!m=!+bt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['secret-chamber-82795.herokuapp.com']
+ALLOWED_HOSTS = ['secret-chamber-82795.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
