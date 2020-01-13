@@ -26,6 +26,16 @@ $accent-colour: gray;
     text-transform: uppercase;
 }
 
+.extra h1{
+    color: $primary-colour3;
+    font-size: 2.4em;
+}
+
+.extra h2{
+    font-size: 1.1em;
+    padding: 1% 5%;
+}
+
 .extra ul {
     text-align: left;
 	list-style: none;
