@@ -502,7 +502,7 @@ h4 {
     position: static;
   }
   .carousel-cell {
-    width: 55%;
+    width: 90%;
     padding: 50px 30px 10px 30px;
     height: 300px;
     margin-right: 15px;
@@ -519,6 +519,15 @@ h4 {
 }
 
 @media only screen and (max-width: 640px) {
+  .carousel-cell {
+    width: 80%;
+    padding: 20px 50px 50px 50px;
+    height: 300px;
+    margin-right: 15px;
+    background-color: #F9AF42;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+  }
   .post-content p {
     font-size: .8em;
     padding: 10px;
