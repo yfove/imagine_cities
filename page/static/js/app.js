@@ -1,6 +1,6 @@
 app = {}
 
-// AOS.init();
+AOS.init();
 
 app.hamburger = function() {
      // Hamburger open close toggle top nav
