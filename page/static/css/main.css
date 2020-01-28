@@ -1415,6 +1415,7 @@ footer {
     padding: 2px;
     font-size: 1em;
     position: relative;
+    top: 100px;
   }
   .nav ul li a:hover {
     background-color: #fff;
