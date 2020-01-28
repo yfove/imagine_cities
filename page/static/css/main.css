@@ -1474,7 +1474,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 500px) {
   .nav ul li a {
     padding: 2px;
     font-size: 1em;
