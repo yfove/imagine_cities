@@ -1415,7 +1415,7 @@ footer {
     padding: 2px;
     font-size: 1em;
     position: relative;
-    top: 300px;
+    top: 250px;
   }
   .nav ul li a:hover {
     background-color: #fff;
@@ -1471,6 +1471,15 @@ footer {
     left: -400px;
     color: #F6F7F9;
     font-size: .6em;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .nav ul li a {
+    padding: 2px;
+    font-size: 1em;
+    position: relative;
+    top: 350px;
   }
 }
 /*# sourceMappingURL=main.css.map */
