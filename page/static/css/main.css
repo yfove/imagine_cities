@@ -1212,42 +1212,6 @@ ul {
   height: 40px;
 }
 
-.hamburger-toggle {
-  float: right;
-  display: none;
-  cursor: pointer;
-}
-
-.hamburger-toggle span {
-  background: black;
-  height: 2px;
-  width: 28px;
-  display: block;
-  margin: 6px 0;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.hamburger-toggle.x-toggle span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger-toggle.x-toggle span:nth-child(1) {
-  -webkit-transform: rotate(45deg);
-  -webkit-transform-origin: 5px 9px;
-          transform-origin: 5px 9px;
-  -webkit-transform: rotate(45deg);
-  transform-origin: 5px 9px;
-}
-
-.hamburger-toggle.x-toggle span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  -webkit-transform-origin: 8px -7px;
-          transform-origin: 8px -7px;
-  -webkit-transform: rotate(-45deg);
-  transform-origin: 8px -7px;
-}
-
 footer {
   background-color: #241F20;
   padding: 40px;
@@ -1451,7 +1415,7 @@ footer {
     padding: 2px;
     font-size: 1em;
     position: relative;
-    top: 200px;
+    top: 250px;
   }
   .nav ul li a:hover {
     background-color: #fff;
@@ -1507,6 +1471,15 @@ footer {
     left: -400px;
     color: #F6F7F9;
     font-size: .6em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .nav ul li a {
+    padding: 2px;
+    font-size: 1em;
+    position: relative;
+    top: 350px;
   }
 }
 /*# sourceMappingURL=main.css.map */
