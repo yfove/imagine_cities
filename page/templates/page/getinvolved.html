@@ -1,0 +1,56 @@
+{% extends 'page/base.html' %}
+<!-- load the static folder -->
+{% load static %} {% block content %}
+<main class="join-page">
+  <!-- main banner -->
+  <div class="main-banner">
+    <div class="main-banner-text box">
+      <h3>Join Our Community</h3>
+    </div>
+  </div>
+  <div class="quote2" data-aos="zoom-in" data-aos-duration="1800">
+    <h5>
+      We cannot do this work alone and we're always looking for great talent.
+    </h5>
+  </div>
+
+  <section
+    class="propellus-grid-main"
+    data-aos="zoom-in"
+    data-aos-duration="1800"
+  >
+    <!-- join-grid -->
+    <ul class="blog-grid">
+      <li class="post post1 box">
+        <div class="propellus-logo">
+          <img src="{% static 'img/propellus.png' %}" alt="img" />
+        </div>
+      </li>
+      <li class="post post2 box">
+        <div class="propellus-text">
+          <h3>
+            Becoming part of our team is a great way to apply your skills and
+            learn new skills in a very meaningful way. If you're interested in
+            joining our team, take a look at the opportunities available on
+            Propellus. If you have any questions, send them over to
+            <span>talent@imaginecities.com</span>
+          </h3>
+        </div>
+      </li>
+      <li class="post post3 box" data-aos="zoom-in" data-aos-duration="1800">
+        <div class="button">
+          <a
+            href="https://www.volunteerconnector.org/calgary/imagine-cities"
+            target="_blank"
+            ><button type="button">Get Involved</button></a
+          >
+        </div>
+      </li>
+    </ul>
+    <!-- blog grid ends -->
+  </section>
+  <div class="bottom-img" data-aos="zoom-in" data-aos-duration="1800">
+    <img src="{% static 'img/1-a.png' %}" alt="" />
+  </div>
+</main>
+{% endblock %}

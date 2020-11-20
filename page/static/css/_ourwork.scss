@@ -1,0 +1,266 @@
+$primary-colour: #241f20;
+$primary-colour2: #f9af42;
+$primary-colour3: #13a7a5;
+$primary-colour4: #149ed3;
+$text-color: #d8d7d6;
+$accent-colour: lightgrey;
+
+.our-work-page .main-banner {
+  background: white url(../img/1-f2.jpeg);
+  background-color: none;
+  background-size: cover;
+  min-height: 800px;
+  position: relative;
+  top: -80px;
+}
+
+.our-work-page .main-banner-text h3 {
+  position: relative;
+  bottom: -5px;
+  // color: #241F20;
+  color: white;
+  // font-size: 3em;
+  // font-weight: bold;
+  font-style: normal;
+  letter-spacing: 2px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.ourwork {
+  overflow: hidden;
+  text-align: center;
+}
+
+.extra h1 {
+  color: $primary-colour3;
+  font-size: 2.4em;
+}
+
+.extra h2 {
+  font-size: 1.1em;
+  padding: 1% 5%;
+}
+
+.extra ul {
+  text-align: left;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  padding: 0 40px;
+  margin: 0;
+  align-items: center;
+}
+
+.extra {
+  // background: url(../img/1-f.jpeg);
+  // background-color: rgb(97, 95, 95);
+  width: 70%;
+  position: relative;
+  bottom: 40px;
+  border-radius: none;
+  text-align: center;
+}
+
+.pocket2 {
+  width: 80%;
+  padding-left: 20px;
+}
+
+.pocket2:hover {
+  opacity: 20%;
+}
+
+.post-b h2 {
+  font-size: 1.3em;
+}
+
+.ourwork .carousel {
+  padding-top: 20px;
+}
+
+.cr2 .carousel-cell {
+  background-color: $primary-colour2;
+}
+
+.cr3 .carousel-cell {
+  background-color: $primary-colour3;
+}
+
+.cr4 .carousel-cell {
+  background-color: lightgrey;
+}
+
+.cr3 .c2 {
+  background-color: lightgrey;
+}
+
+.indev {
+  color: grey;
+  align-items: right;
+  font-size: 2em;
+}
+
+.extra {
+  padding: 40px;
+}
+
+.extra h2 {
+  line-height: 2rem;
+}
+
+.extra1 h1 {
+  color: $primary-colour2;
+}
+.extra2 h1 {
+  color: $primary-colour3;
+}
+.extra3 h1 {
+  color: $primary-colour4;
+}
+
+.repo-text {
+  // background-color: #13A7A5;
+  font-size: 1em;
+  padding: 10 20 50 0;
+  margin-right: 25%;
+  margin-top: 15%;
+}
+
+.repo-text h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.repo-text p {
+  font-size: 0.9em;
+}
+
+.research-repo {
+  padding: 10px;
+  position: relative;
+  top: -30px;
+}
+
+.socialmedia img {
+  width: 200px;
+  height: auto;
+  display: inline-block;
+}
+
+.research-repo ul {
+  text-align: cent;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 0;
+  margin-bottom: 50px;
+}
+
+.projects {
+  margin: 0 20%;
+  align-items: center;
+  text-align: center;
+}
+
+.projects ul {
+  text-align: center;
+  list-style: none;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr;
+  // padding: 10%;
+  border-radius: px;
+  margin-bottom: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.projects li {
+  align-items: center;
+}
+
+.projects li:hover {
+  opacity: 20%;
+  // width: 110%;
+}
+
+.projects img {
+  width: 40%;
+}
+
+.post-content .indev {
+  padding-top: 50px;
+  color: grey;
+  text-align: center;
+  align-items: center;
+  font-size: large;
+}
+
+@media only screen and (max-width: 900px) {
+  .pocket2 {
+    width: 55%;
+    top: 30px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .extra ul {
+    text-align: center;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+    padding: 40px;
+    margin: 0;
+    // border-radius: px;
+  }
+
+  .pocket2 {
+    width: 50%;
+  }
+
+  .post-b h2 {
+    text-align: center;
+  }
+
+  .projects ul {
+    text-align: center;
+    list-style: none;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr;
+    // padding: 10%;
+    border-radius: px;
+    margin-bottom: 10px;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .featured-posts {
+    margin-bottom: 50px;
+  }
+
+  .post-content a {
+    font-size: small;
+    margin: 20px;
+  }
+
+  .extra h1 {
+    font-size: 1.9rem;
+    padding-top: 50px;
+  }
+
+  .extra h2 {
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  .extra {
+    padding: 10px;
+    padding-top: 30px;
+  }
+}

@@ -1,0 +1,241 @@
+<!-- load the static folder -->
+{% load static %}
+<!-- begin -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Imagine Cities</title>
+  <meta name="description" content="Research & Innovation. We Are All
+    City Builders: Join the Movement" />
+  <!-- social media meta tags -->
+  <meta property="og:title" content="Imagine Cities Calgary" />
+  <meta property="og:description" content="We inform the public, inspire
+    action, and act as a catalyst for creating collaborative solutions that
+    guide cities through a rapidly urbanizing world" ." />
+  <meta property="og:image" content="{% static 'img/A1.png' %}" />
+  <meta property="og:url" content="http://imaginecities.com" />
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="{% static 'img/i.png' %}" />
+  <meta name="twitter:title" content="Imagine Cities" />
+  <meta name="twitter:description" content="Research & Innovation. We Are All City Builders: Join the Movement" />
+  <meta name="twitter:image" content="{% static 'img/A1.png' %}" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46745476-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-46745476-1");
+  </script>
+  <link rel="shortcut icon" href="{% static 'img/tablogo.png' %}" type="favicon/ico" />
+  <!-- load favicon -->
+  <!-- load font awesome -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,700i,800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Caveat|Courgette|Kalam|Lobster|Marck+Script&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+    integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous" />
+  <!-- load google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400i|Raleway:400,700,900" rel="stylesheet" />
+  <!-- animate on scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- link to style sheets -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css" />
+
+</head>
+
+<!-- header -->
+<header class="header">
+  <div class="clearfix">
+    <!-- top nav bar -->
+    <div class="top-nav-flex">
+      <a href="{% url 'home' %}"><img src="{% static 'img/i.png' %}" alt="logo" /></a>
+      <!-- hamburger menu for mobile -->
+      <div class="hamburger-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav">
+        <ul class="top-nav">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a class="aboutdupe" href="{% url 'about' %}">About</a></li>
+          <li>
+            <div class="dropdown">
+              <div class="dropbtn">
+                <a class="aboutnav" href="{% url 'about' %}">About</a>
+              </div>
+              <div class="dropdown-content">
+                <a class="aboutnav" href="{% url 'about' %}">About</a>
+                <a href="{% url 'values' %}">Values</a>
+                <a href="{% url 'ourindicators' %}">Our Indicators</a>
+                <a href="{% url 'ourteam' %}">Our Team</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="{% url 'ourwork' %}">Our Work</a></li>
+          <li>
+            <a href="{% url 'getinvolved' %}">Get Involved</a>
+          </li>
+          <li>
+            <a href="{% url 'contactus' %}">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- top nav flex end -->
+  </div>
+  <!-- wrapper end -->
+</header>
+
+<body>
+  {% block content %} {% endblock %}
+  <!-- load JavaScript -->
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script> -->
+  <!-- <script src="/path/to/parallax.js"></script> -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="{% static 'js/app.js' %}"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158789910-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-158789910-1");
+  </script>
+</body>
+<!-- footer -->
+
+<footer>
+  <!-- footer main -->
+  <div class="footer-main">
+    <div class="wrapper">
+      <!-- footer grid main -->
+      <div class="footer-grid-main">
+        <div class="logo">
+          <a href="{% url 'home' %}"><img src="{% static 'img/white_logo.png' %}" alt="logo" /></a>
+        </div>
+        <nav class="footer-nav">
+          <ul class="bottom-nav">
+            <li><a href="{% url 'home' %}" target="_blank">Home</a></li>
+            <li><a href="{% url 'about' %}" target="_blank">About</a></li>
+            <li>
+              <a href="{% url 'ourwork' %}" target="_blank">Our Work</a>
+            </li>
+            <li>
+              <a href="{% url 'getinvolved' %}" target="_blank">Get Involved</a>
+            </li>
+            <li>
+              <a href="{% url 'contactus' %}" target="_blank">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-desc">
+          <div class="subscribe_form">
+            <p>Sign up for our newsletter to get the latest updates</p>
+            <form action="https://imaginecities.us20.list-manage.com/subscribe/post" method="POST" class="subscribe"
+              target="_blank">
+              <input type="hidden" name="u" value="cdb0efdf202bda282e4a8cdd5" />
+              <input type="hidden" name="id" value="6305fc0e1b" />
+
+              <!-- people should not fill these in and expect good things -->
+              <div class="field-shift" aria-label="Please leave the following three fields empty">
+                <!-- <label for="b_name">Name: </label>
+                                <input type="text" name="b_name" tabindex="-1" value="" placeholder="Freddie" id="b_name">
+                                <label for="b_email">Email: </label>
+                                <input type="email" name="b_email" tabindex="-1" value="" placeholder="youremail@gmail.com" id="b_email"> -->
+              </div>
+              <div id="mergeTable" class="mergeTable">
+                <div class="mergeRow dojoDndItem mergeRow-email" id="mergeRow-0">
+                  <!-- <label for="MERGE0">Email Address <span class="req asterisk">*</span></label> -->
+                  <div class="field-group">
+                    <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25"
+                      value="" placeholder="email address*" />
+                  </div>
+                </div>
+
+                <div class="mergeRow dojoDndItem mergeRow-text" id="mergeRow-1">
+                  <!-- <label for="MERGE1">First Name</label> -->
+                  <div class="field-group">
+                    <input type="text" name="MERGE1" id="MERGE1" size="25" value="" placeholder="first name" />
+                  </div>
+                </div>
+
+                <div class="mergeRow dojoDndItem mergeRow-text" id="mergeRow-2">
+                  <!-- <label for="MERGE2">Last Name</label> -->
+                  <div class="field-group">
+                    <input type="text" name="MERGE2" id="MERGE2" size="25" value="" placeholder="last name" />
+                  </div>
+                </div>
+
+                <!-- <div class="mergeRow dojoDndItem mergeRow-birthday" id="mergeRow-5">
+                                    <label for="MERGE5">Birthday</label>
+                                    <div class="field-group">
+                                        <div class="birthdayfield subfields borderbox"><span class="subfield monthfield"><label for="MERGE5-month">Month</label><input type="text" pattern="[0-9]*" id="MERGE5-month" name="MERGE5[month]" maxlength="2" size="2" value="" placeholder="MM"></span> / <span class="subfield dayfield"><label for="MERGE5-day">Day</label><input type="text" pattern="[0-9]*" id="MERGE5-day" name="MERGE5[day]" maxlength="2" size="2" value="" placeholder="DD"></span></div>
+                                    </div>
+                                </div> -->
+              </div>
+              <div class="submit_container clear">
+                <input type="submit" class="formEmailButton" name="submit" value="Subscribe" />
+              </div>
+              <!-- <input
+                  type="hidden"
+                  name="ht"
+                  value="99d7c0e6cf9b8ee8674ff589f5c98120cc39a26f:MTU3ODE3ODQ2MC41MDU5"
+                />
+                <input type="hidden" name="mc_signupsource" value="hosted" /> -->
+            </form>
+            <!-- http://eepurl.com/gONScb -->
+            <!-- 
+                            <form id="subscribe" form method='POST'>{% csrf_token %}
+
+                                <input id="email_id" type="email" name="email_id" placeholder="your@email.com">
+                                <button type="submit" value="Subscribe" id="email_submit">Subscribe</button>
+                            </form> -->
+          </div>
+        </div>
+        <div class="icons">
+          <a href="https://www.facebook.com/imaginecities/"><i class="fab fa-facebook-f icon"></i></a>
+          <a href="https://www.linkedin.com/company/imagine-cities/"><i class="fab fa-linkedin-in icon"></i></a>
+          <a href="https://www.twitter.com/imaginecities"><i class="fab fa-twitter icon"></i></a>
+          <a href="https://www.instagram.com/imaginecities"><i class="fab fa-instagram icon"></i></a>
+          <a href="https://www.youtube.com/channel/UCnKzWKNeQIBPiF0HwgRy79Q/playlists?view_as=subscriber"><i
+              class="fab fa-youtube icon"></i></a>
+        </div>
+        <!-- <div class="copyright">
+          <a href=""></a>
+          <p class="copyright-text">
+            &copy; 2020 Imagine Cities &RightArrow;
+            <br />
+            <a href="https://avvisuals.com/">images by avvisuals</a>
+          </p>
+        </div> -->
+      </div>
+      <!-- footer main grid end -->
+    </div>
+    <!-- wrapper end -->
+  </div>
+  <!-- footer main end -->
+</footer>
+<!-- import jquery scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</html>

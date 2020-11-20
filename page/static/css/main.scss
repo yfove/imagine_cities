@@ -1,0 +1,521 @@
+@import "./getinvolved";
+@import "./home";
+@import "./about";
+@import "./setup";
+@import "./contact";
+@import "./ourwork";
+@import "./ourteam";
+
+$primary-colour: #241f20;
+$primary-colour2: #f9af42;
+$primary-colour3: #13a7a5;
+$primary-colour4: #149ed3;
+$text-color: #d8d7d6;
+$accent-colour: gray;
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  max-height: 100%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: white;
+  // background-color: white;
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+ul {
+  // margin: 0;
+  // padding: 0;
+  font-size: small;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Top Nav Bar */
+.top-nav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+.top-nav li {
+  display: inline-block;
+  line-height: 35px;
+}
+
+.top-nav li a:hover {
+  color: $primary-colour2;
+}
+
+.top-nav li a {
+  display: block;
+  font-size: 12px;
+  color: black;
+  padding-right: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.top-nav-flex img {
+  max-width: 100%;
+  height: 49px;
+}
+
+.top-nav {
+  // overflow: hidden;
+  // background-color: #333;
+}
+
+.top-nav a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+// nav dropdowns
+
+.dropdown {
+  float: left;
+  // overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.top-nav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: $primary-colour3;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: $primary-colour3;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.top-nav .aboutdupe {
+  display: none;
+}
+
+// hamburger
+
+.hamburger-toggle span {
+  background: black;
+  height: 2px;
+  width: 28px;
+  display: block;
+  margin: 6px 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hamburger-toggle.x-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-toggle.x-toggle span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  transform-origin: 5px 9px;
+  -webkit-transform: rotate(45deg);
+  transform-origin: 5px 9px;
+}
+
+.hamburger-toggle.x-toggle span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  transform-origin: 8px -7px;
+  -webkit-transform: rotate(-45deg);
+  transform-origin: 8px -7px;
+}
+
+// footer
+
+footer {
+  background-color: $primary-colour;
+  padding: 40px;
+  text-align: center;
+}
+
+.footer-main img {
+  max-width: 100%;
+}
+
+.footer-main a {
+  color: #d8d7d6;
+}
+
+.footer-grid-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-desc {
+  color: #d8d7d6;
+}
+
+.footer-nav a {
+  font-size: 1.4em;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  top: 20px;
+}
+
+.footer-nav a:hover {
+  color: #f9af42;
+}
+
+.footer-nav li {
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.footer-desc input {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+}
+
+.footer-desc button {
+  padding: 8px 50px;
+  margin-top: 10px;
+  background-color: #f9af42;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.footer-desc p {
+  color: $primary-colour2;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+.submit_container input {
+  padding: 8px 80px;
+  margin-top: 10px;
+  background-color: #f9af42;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.submit_container input:hover {
+  background-color: $primary-colour3;
+  color: whitesmoke;
+}
+
+.copyright p {
+  float: right;
+  position: relative;
+  left: 250px;
+  top: 20px;
+  color: #f6f7f9;
+  font-size: 0.6em;
+}
+
+.icons {
+  letter-spacing: 2px;
+  font-size: 1.3em;
+}
+
+.icons a:hover {
+  color: #f9af42;
+}
+
+// nav hamburger toggle
+
+.hamburger-toggle {
+  float: right;
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-toggle span {
+  background: black;
+  height: 2px;
+  // width: 28px;
+  display: block;
+  margin: 6px 0;
+}
+
+/*  */
+
+@media only screen and (max-width: 900px) {
+  .featured-posts ul {
+    text-align: left;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3em;
+  }
+
+  .newsletter-grid-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    text-align: justify;
+    margin: 1em;
+    margin-bottom: 80px;
+    padding: 0px;
+  }
+
+  .blog-grid {
+    margin: 60px;
+    grid-area: blog;
+    display: grid;
+    grid-template-areas:
+      "post1 "
+      "post3"
+      "post2";
+    grid-gap: 0em;
+    padding: 20px;
+  }
+
+  .post1 .propellus-logo {
+    max-width: 60%;
+    height: auto;
+    padding-bottom: 10px;
+    margin: 0 20%;
+  }
+
+  .post1 .pocket-logo {
+    // max-width: 60%;
+    height: auto;
+    position: relative;
+    top: 30px;
+    margin: 0 20%;
+    text-align: center;
+  }
+
+  .main-banner-text h3 {
+    margin: 0 5%;
+  }
+
+  .quote {
+    font-size: 0.8em;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 700px) {
+  body {
+    background-color: whitesmoke;
+  }
+
+  .hamburger-toggle {
+    display: block;
+    position: relative;
+    z-index: 1000;
+    padding: 10px 0;
+  }
+
+  .nav {
+    text-align: center;
+    padding-top: 20px;
+    position: absolute;
+    -webkit-transform: translate(-100%);
+    transform: translate(-100%);
+    right: 0;
+    left: 0;
+    background-color:black;
+    height: 120vh;
+    -webkit-transition: 0.3s;
+    transition: 0.1s;
+    opacity: 1;
+  }
+
+  .dropdown-content {
+    display: none;
+  }
+
+  .nav.res-menu {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    opacity: 1;
+  }
+
+  .nav ul li {
+    display: inline-block
+    line-height: 20px;
+  }
+
+  .nav ul li a {
+    padding: 1rem;
+    text-align: center;
+    letter-spacing: 10px;
+    color: white;
+  }
+
+  .nav ul li a:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .nav ul {
+    padding-top: 30%;
+    margin: 20px;
+  }
+
+  .top-nav .aboutdupe {
+    display: block;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .main-banner h4 {
+    margin: 0 20%;
+  }
+
+  .ourwork-banner a {
+    position: relative;
+    top: 60px;
+    right: 100px;
+  }
+
+  .featured-posts ul {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid-main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid-main .footer-desc {
+    margin: 15px;
+  }
+
+  .footer-grid-main li {
+    text-align: center;
+  }
+
+  .pocket-logo img {
+    position: relative;
+    right: 40px;
+  }
+
+  .footer-desc p {
+    color: $primary-colour2;
+    font-size: 1.2em;
+    padding: 20px;
+  }
+
+  .footer-nav li {
+    text-align: center;
+    // margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .copyright p {
+    position: relative;
+    left: -400px;
+    color: #f6f7f9;
+    font-size: 0.6em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .nav ul li a {
+    // padding-top: 20px;
+    font-size: 1.5em;
+    word-spacing: 2px;
+  }
+
+  .nav ul {
+    padding-top: 45%;
+    margin: 20px;
+  }
+
+  footer {
+    margin: 0;
+    padding: 20px 0 20px 0;
+  }
+
+  .footer-nav li {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+  }
+
+  .logo img {
+    scale: 10%;
+  }
+}
