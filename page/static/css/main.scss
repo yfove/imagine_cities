@@ -5,6 +5,7 @@
 @import "./contact";
 @import "./ourwork";
 @import "./ourteam";
+@import "./carousel";
 
 $primary-colour: #241f20;
 $primary-colour2: #f9af42;
@@ -410,7 +411,7 @@ footer {
   }
 
   .nav ul li {
-    display: inline-block
+    display: inline-block;
     line-height: 20px;
   }
 
