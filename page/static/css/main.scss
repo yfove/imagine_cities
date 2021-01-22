@@ -6,6 +6,10 @@
 @import "./ourwork";
 @import "./ourteam";
 @import "./carousel";
+@import "./values";
+@import "./ourindicators";
+@import "./ourteam";
+
 
 $primary-colour: #241f20;
 $primary-colour2: #f9af42;
@@ -168,6 +172,15 @@ ul {
 }
 
 .top-nav .aboutdupe {
+  display: none;
+}
+.top-nav .aboutdupe2 {
+  display: none;
+}
+.top-nav .aboutdupe3 {
+  display: none;
+}
+.top-nav .aboutdupe4 {
   display: none;
 }
 
@@ -436,6 +449,16 @@ footer {
     display: block;
   }
 
+  .top-nav .aboutdupe2 {
+    display: block;
+  }
+  .top-nav .aboutdupe3 {
+    display: block;
+  }
+  .top-nav .aboutdupe4 {
+    display: block;
+  }
+
   .dropdown {
     display: none;
   }
@@ -500,7 +523,7 @@ footer {
   }
 
   .nav ul {
-    padding-top: 45%;
+    padding-top: 100%;
     margin: 20px;
   }
 

@@ -1,0 +1,43 @@
+.bios .container {
+    padding: 2em;
+    margin: 80px;
+}
+
+.bios h1 {
+    font-size: 3rem;
+    color: orange;
+    margin-bottom: 1.5em;
+}
+
+.bios h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5em;
+}
+
+.bios p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5em;
+    width: 60%;
+}
+
+.bios a {
+    text-decoration: none;
+    color: #149ed3;
+}
+
+@media only screen and (max-width: 500px) {
+    .bios {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .bios p {
+        width: 100%;
+    }
+
+    .bios .container {
+        padding: 20px 0;
+        margin: 10%;
+      }
+
+}

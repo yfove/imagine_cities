@@ -1298,6 +1298,47 @@ template {
   }
 }
 
+.bios .container {
+  padding: 2em;
+  margin: 80px;
+}
+
+.bios h1 {
+  font-size: 3rem;
+  color: orange;
+  margin-bottom: 1.5em;
+}
+
+.bios h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5em;
+}
+
+.bios p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5em;
+  width: 60%;
+}
+
+.bios a {
+  text-decoration: none;
+  color: #149ed3;
+}
+
+@media only screen and (max-width: 500px) {
+  .bios {
+    margin: 20px;
+    text-align: center;
+  }
+  .bios p {
+    width: 100%;
+  }
+  .bios .container {
+    padding: 20px 0;
+    margin: 10%;
+  }
+}
+
 .carousel-cell {
   border-radius: 10px;
 }
@@ -1369,6 +1410,126 @@ template {
     font-size: .95rem;
     text-align: left;
     padding: 20px 5px 0 5px;
+  }
+}
+
+.values .container {
+  padding: 2em;
+  margin: 80px;
+}
+
+.values h1 {
+  color: orange;
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.values h2 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.values p {
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+  width: 60%;
+}
+
+@media only screen and (max-width: 500px) {
+  .values {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .values p {
+    width: 100%;
+  }
+  .values .container {
+    padding: 20px 0;
+    margin: 10%;
+  }
+}
+
+.indicators .container {
+  padding: 2em;
+  margin: 80px;
+}
+
+.indicators h1 {
+  color: orange;
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.indicators h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.indicators p {
+  font-size: 1.3rem;
+  margin-bottom: 450px;
+  width: 80%;
+}
+
+@media only screen and (max-width: 500px) {
+  .indicators {
+    margin: 0;
+    text-align: center;
+  }
+  .indicators p {
+    width: 100%;
+  }
+  .container {
+    padding: none;
+    margin: none;
+  }
+  .indicators .container {
+    padding: 20px 0;
+    margin: 10%;
+  }
+}
+
+.bios .container {
+  padding: 2em;
+  margin: 80px;
+}
+
+.bios h1 {
+  font-size: 3rem;
+  color: orange;
+  margin-bottom: 1.5em;
+}
+
+.bios h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5em;
+}
+
+.bios p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5em;
+  width: 60%;
+}
+
+.bios a {
+  text-decoration: none;
+  color: #149ed3;
+}
+
+@media only screen and (max-width: 500px) {
+  .bios {
+    margin: 20px;
+    text-align: center;
+  }
+  .bios p {
+    width: 100%;
+  }
+  .bios .container {
+    padding: 20px 0;
+    margin: 10%;
   }
 }
 
@@ -1524,6 +1685,18 @@ ul {
 }
 
 .top-nav .aboutdupe {
+  display: none;
+}
+
+.top-nav .aboutdupe2 {
+  display: none;
+}
+
+.top-nav .aboutdupe3 {
+  display: none;
+}
+
+.top-nav .aboutdupe4 {
   display: none;
 }
 
@@ -1773,6 +1946,15 @@ footer {
   .top-nav .aboutdupe {
     display: block;
   }
+  .top-nav .aboutdupe2 {
+    display: block;
+  }
+  .top-nav .aboutdupe3 {
+    display: block;
+  }
+  .top-nav .aboutdupe4 {
+    display: block;
+  }
   .dropdown {
     display: none;
   }
@@ -1827,7 +2009,7 @@ footer {
     word-spacing: 2px;
   }
   .nav ul {
-    padding-top: 45%;
+    padding-top: 100%;
     margin: 20px;
   }
   footer {

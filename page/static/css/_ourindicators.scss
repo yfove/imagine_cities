@@ -1,0 +1,46 @@
+.indicators .container {
+    padding: 2em;
+    margin: 80px;
+  }
+
+  .indicators h1 {
+    color: orange;
+    font-size: 3em;
+    margin-bottom: 50px;
+
+  }
+
+  .indicators h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .indicators p {
+    font-size: 1.3rem;
+    margin-bottom: 450px;
+    width: 80%
+  }
+
+  @media only screen and (max-width: 500px) {
+    .indicators {
+        margin: 0;
+        text-align: center;
+    }
+
+    .indicators p {
+        width: 100%;
+    }
+
+    .container {
+        padding: none;
+        margin: none;
+    }
+
+    .indicators .container {
+        padding: 20px 0;
+        margin: 10%;
+      }
+
+}
+
