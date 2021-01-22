@@ -392,6 +392,10 @@ h4 {
   // border-radius: px;
 }
 
+.box {
+  border-radius: 10px;
+}
+
 @media only screen and (max-width: 940px) {
   .extra {
     position: static;

@@ -2,8 +2,8 @@ app = {}
 
 AOS.init();
 
-app.hamburger = function() {
-     // Hamburger open close toggle top nav
+app.hamburger = function () {
+    // Hamburger open close toggle top nav
     $('.hamburger-toggle').on('click', function () {
         $(this).toggleClass('x-toggle');
         $('nav').toggleClass('res-menu');
@@ -15,7 +15,7 @@ app.projectCarousel = function () {
         cellAlign: 'left',
         wrapAround: true,
         cellSelector: '.carousel-cell',
-        imagesLoaded: true
+        imagesLoaded: true,
     });
 }
 

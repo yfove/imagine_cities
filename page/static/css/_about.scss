@@ -97,7 +97,6 @@ a.white-paper {
 
 .seeourwork a:hover {
   color: $primary-colour2;
-  font-size: 4em;
   text-decoration: none;
   font-weight: bold;
 }
@@ -106,6 +105,33 @@ a.white-paper {
   color: $primary-colour3;
   padding: 10%;
   text-decoration: none;
+}
+
+.about-button {
+  padding: 20px;
+}
+
+.about-button button {
+  margin: 10%;
+  background-color: #241f20;
+  color: white;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  margin: 10px;
+  -webkit-box-pack: centre;
+  -ms-flex-pack: centre;
+  justify-content: centre;
+  position: relative;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.about-button button:hover {
+  background-color: #f9af42;
 }
 
 @media only screen and (max-width: 1150px) {

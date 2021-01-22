@@ -32,7 +32,7 @@
 
 .bottom-img img {
   padding: 0 35px 35px 35px;
-  max-width: 60%;
+  max-width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -112,6 +112,16 @@
   padding: 10px 60px;
 }
 
+.involved-quote {
+  text-align: center;
+  line-height: 130%;
+  font-weight: 300;
+  font-size: 1.3em;
+  padding: 10px 60px;
+  color: #8a8682;
+  margin: 0 10% 10% 10%;
+}
+
 @media only screen and (max-width: 500px) {
   .join-page .main-banner h3 {
     position: relative;
@@ -138,6 +148,22 @@
   }
   .bottom-img img {
     padding: 0;
+  }
+  .post2 .propellus-text h3 {
+    line-height: 130%;
+    font-weight: 300;
+    font-size: 1.2em;
+    padding: 0;
+    margin: 20px;
+  }
+  .involved-quote {
+    text-align: center;
+    line-height: 130%;
+    font-weight: 300;
+    font-size: 0.9em;
+    padding: 10px 60px;
+    color: #8a8682;
+    margin: 0 0 10% 0;
   }
 }
 
@@ -503,6 +529,10 @@ h4 {
   margin: 0;
 }
 
+.box {
+  border-radius: 10px;
+}
+
 @media only screen and (max-width: 940px) {
   .extra {
     position: static;
@@ -681,7 +711,6 @@ a.white-paper {
 
 .seeourwork a:hover {
   color: #f9af42;
-  font-size: 4em;
   text-decoration: none;
   font-weight: bold;
 }
@@ -690,6 +719,33 @@ a.white-paper {
   color: #13a7a5;
   padding: 10%;
   text-decoration: none;
+}
+
+.about-button {
+  padding: 20px;
+}
+
+.about-button button {
+  margin: 10%;
+  background-color: #241f20;
+  color: white;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  margin: 10px;
+  -webkit-box-pack: centre;
+  -ms-flex-pack: centre;
+  justify-content: centre;
+  position: relative;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.about-button button:hover {
+  background-color: #f9af42;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -960,8 +1016,8 @@ template {
 }
 
 .contact-us h2 {
-  font-size: 1.3em;
-  line-height: 120%;
+  font-size: 1.2em;
+  line-height: 150%;
 }
 
 .contact-us p {
@@ -1242,9 +1298,8 @@ template {
   }
 }
 
-.post-content a button {
-  color: white;
-  background-color: black;
+.carousel-cell {
+  border-radius: 10px;
 }
 
 .post-content .indev {
@@ -1279,10 +1334,6 @@ template {
   padding: 20px;
 }
 
-.post-content a:hover {
-  color: white;
-}
-
 .post-content h3 {
   line-height: 1.2rem;
 }
@@ -1302,6 +1353,23 @@ template {
   border-radius: 10px;
   font-weight: bold;
   letter-spacing: 2px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  .carousel-cell {
+    height: 55vh;
+    padding: 30px;
+  }
+  .post-content {
+    padding: 0;
+    margin: 0;
+  }
+  .post-content .indev {
+    font-size: .95rem;
+    text-align: left;
+    padding: 20px 5px 0 5px;
+  }
 }
 
 *,
@@ -1664,14 +1732,13 @@ footer {
   }
   .nav {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 40px;
     position: absolute;
     -webkit-transform: translate(-100%);
     transform: translate(-100%);
     right: 0;
     left: 0;
-    background-color: black;
-    height: 120vh;
+    background-color: #1f1d1d;
     -webkit-transition: 0.3s;
     -webkit-transition: 0.1s;
     transition: 0.1s;
@@ -1775,6 +1842,13 @@ footer {
   }
   .logo img {
     scale: 10%;
+  }
+  .post-content {
+    padding: none;
+    margin: 0;
+  }
+  .post-content p {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

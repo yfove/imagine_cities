@@ -38,7 +38,7 @@ $accent-colour: gray;
 
 .bottom-img img {
   padding: 0 35px 35px 35px;
-  max-width: 60%;
+  max-width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -111,6 +111,18 @@ $accent-colour: gray;
   padding: 10px 60px;
 }
 
+.involved-quote {
+  text-align: center;
+  line-height: 130%;
+  font-weight: 300;
+  font-size: 1.3em;
+  padding: 10px 60px;
+  color: rgb(138, 134, 130);
+  // padding: 20px;
+  margin: 0 10% 10% 10%;
+  
+}
+
 @media only screen and (max-width: 500px) {
 
   .join-page .main-banner h3 {
@@ -141,6 +153,27 @@ $accent-colour: gray;
   }
 
   .bottom-img img {
+    // width: 120%;
     padding: 0;
+  }
+
+  .post2 .propellus-text h3 {
+    line-height: 130%;
+    font-weight: 300;
+    font-size: 1.2em;
+    padding: 0;
+    margin: 20px;
+  }
+
+  .involved-quote {
+    text-align: center;
+    line-height: 130%;
+    font-weight: 300;
+    font-size: 0.9em;
+    padding: 10px 60px;
+    color: rgb(138, 134, 130);
+    // padding: 20px;
+    margin: 0 0 10% 0;
+    
   }
 }

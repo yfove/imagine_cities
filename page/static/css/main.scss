@@ -387,14 +387,14 @@ footer {
 
   .nav {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 40px;
     position: absolute;
     -webkit-transform: translate(-100%);
     transform: translate(-100%);
     right: 0;
     left: 0;
-    background-color:black;
-    height: 120vh;
+    background-color:rgb(31, 29, 29);
+    // height: 100vh;
     -webkit-transition: 0.3s;
     transition: 0.1s;
     opacity: 1;
@@ -518,5 +518,14 @@ footer {
 
   .logo img {
     scale: 10%;
+  }
+
+  .post-content {
+    padding: none;
+    margin: 0;
+  }
+
+  .post-content p {
+    font-size: 1rem;
   }
 }
