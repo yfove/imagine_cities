@@ -685,13 +685,11 @@ h4 {
 
 .mission-text2 a {
   color: #149ed3;
-  padding: 10%;
   text-decoration: none;
 }
 
 a.white-paper {
   color: #149ed3;
-  padding: 10%;
   text-decoration: none;
 }
 
@@ -745,6 +743,33 @@ a.white-paper {
 }
 
 .about-button button:hover {
+  background-color: #f9af42;
+}
+
+.paper-button {
+  text-align: center;
+}
+
+.paper-button button {
+  margin: 10%;
+  background-color: #241f20;
+  color: white;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  margin: 10px;
+  -webkit-box-pack: centre;
+  -ms-flex-pack: centre;
+  justify-content: centre;
+  position: relative;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.paper-button button:hover {
   background-color: #f9af42;
 }
 
