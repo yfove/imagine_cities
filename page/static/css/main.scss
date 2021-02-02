@@ -39,10 +39,7 @@ body {
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-html,
-body {
   max-height: 100%;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
@@ -50,7 +47,6 @@ body {
 
 body {
   background-color: white;
-  // background-color: white;
 }
 
 .wrapper {
@@ -64,8 +60,6 @@ h2,
 h3,
 h4,
 ul {
-  // margin: 0;
-  // padding: 0;
   font-size: small;
   font-family: "Montserrat", sans-serif;
 }
@@ -90,10 +84,6 @@ ul {
   line-height: 35px;
 }
 
-.top-nav li a:hover {
-  color: $primary-colour2;
-}
-
 .top-nav li a {
   display: block;
   font-size: 12px;
@@ -104,14 +94,13 @@ ul {
   font-weight: bolder;
 }
 
+.top-nav li a:hover {
+  color: $primary-colour2;
+}
+
 .top-nav-flex img {
   max-width: 100%;
   height: 49px;
-}
-
-.top-nav {
-  // overflow: hidden;
-  // background-color: #333;
 }
 
 .top-nav a {
