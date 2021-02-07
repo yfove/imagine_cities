@@ -4,38 +4,37 @@
 }
 
 .values h1 {
-    color: orange;
-    font-size: 3em;
-    margin-bottom: 50px;
+  color: orange;
+  font-size: 3em;
+  margin-bottom: 50px;
+}
 
-  }
+.values h2 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 
-  .values h2 {
-    font-size: 1.6em;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
+.values p {
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+  width: 60%;
+}
 
-  .values p {
-    font-size: 1.3rem;
-    margin-bottom: 50px;
-    width: 60%;
-  }
+@media only screen and (max-width: 500px) {
+    .values {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
 
-  @media only screen and (max-width: 500px) {
-      .values {
-          margin: 0;
-          padding: 0;
-          text-align: center;
-      }
+    .values p {
+        width: 100%;
+    }
 
-      .values p {
-          width: 100%;
-      }
+    .values .container {
+      padding: 20px 0;
+      margin: 10%;
+    }
 
-      .values .container {
-        padding: 20px 0;
-        margin: 10%;
-      }
-  
 }
