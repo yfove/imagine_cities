@@ -6,6 +6,7 @@ $primary-colour5: #d8d7d6;
 $accent-colour: gray;
 
 .main-banner {
+  height: 100vh;
   min-height: 800px;
   max-width: 100%;
   background: white url(../img/Homepage.png);
@@ -16,8 +17,6 @@ $accent-colour: gray;
   display: flex;
   justify-content: center;
   align-items: center;
-  // position: relative;
-  // top: -80px;
   z-index: 1;
 }
 
@@ -80,38 +79,12 @@ h4 {
   text-align: center;
 }
 
-.featured-posts {
-  padding: 20px;
-}
-
-.quote h4 {
-  padding: 80px;
-  color: rgb(75, 73, 73);
-  font-size: 3.1em;
-  opacity: 80%;
-  text-align: center;
-  padding-bottom: 40px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  position: relative;
-  bottom: 50px;
-}
-
-.quote {
-  align-items: center;
-  position: relative;
-  bottom: 70px;
-}
-
-.quote a {
-  text-decoration: none;
-}
-
 // main page
 // featured posts
 .featured-posts {
   text-align: center;
   display: block;
-  // float: left;
+  padding: 20px;
 }
 
 .featured-posts h2 {
@@ -119,18 +92,16 @@ h4 {
   padding: 30px;
 }
 
-
-
 // quote
 .quote {
-  margin: 50px;
-  padding-top: 50px;
   position: relative;
   bottom: 70px;
-}
 
-.quote {
+  margin: 50px;
   margin-top: 25px;
+
+  padding-top: 50px;
+
   font-size: 21px;
   text-align: center;
 
@@ -142,14 +113,15 @@ h4 {
 }
 
 .quote h4 {
-  // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
-  // font-family: 'Lobster', cursive;
-  // font-family: 'Courgette', cursive;
-  // font-family: 'Caveat', cursive;
-  // font-family: 'Kalam', cursive;
-  // font-family: 'Marck Script', cursive;
+  padding: 80px;
+  color: rgb(75, 73, 73);
+  opacity: 80%;
+  text-align: center;
+  padding-bottom: 40px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: relative;
+  bottom: 50px;
   font-size: 2.8em;
-  // text-transform: uppercase;
   font-weight: bolder;
   font-style: italic;
 }
@@ -165,7 +137,11 @@ h4 {
 }
 
 .newsletter h3 {
-  font-size: 1.4em;
+  text-align: center;
+  font-size: 1.2em;
+  color: black;
+  text-transform: uppercase;
+  padding: 30px;
   margin: 20px;
 }
 
@@ -178,14 +154,6 @@ h4 {
   margin: 0em;
   margin-bottom: 80px;
   padding: 0px;
-}
-
-.newsletter h3 {
-  text-align: center;
-  font-size: 1.2em;
-  color: black;
-  text-transform: uppercase;
-  padding: 30px;
 }
 
 .eventbrite {
@@ -219,7 +187,6 @@ h4 {
 
 .eventbrite button:hover {
   background-color: $primary-colour1;
-  border: white solid 1px;
 }
 
 .community {
@@ -252,7 +219,6 @@ h4 {
 
 .community button:hover {
   background-color: #241f20;
-  border: white solid 1px;
 }
 
 .volunteer {
@@ -286,7 +252,6 @@ h4 {
 
 .volunteer button:hover {
   background-color: #241f20;
-  border: white solid 1px;
 }
 
 // Placeholder for email inputs
@@ -356,12 +321,6 @@ h4 {
   line-height: 120%;
   font-size: 1.2rem;
   counter-increment: gallery-cell;
-}
-
-
-
-.learncell {
-  padding: 30px;
 }
 
 .flickity-page-dots {
@@ -436,13 +395,17 @@ h4 {
 
 @media only screen and (max-width: 550px) {
   .carousel-cell {
-    width: 90%;
-    padding: 20px 50px 50px 50px;
+    width: 100%;
     height: 400px;
-    margin-right: 15px;
+
     background-color: $primary-colour2;
     border-radius: 5px;
     counter-increment: gallery-cell;
+
+    padding: 20px 50px 50px 30px;
+
+    margin: 5px;
+    margin-right: 15px;
   }
 
   .post-content {
@@ -458,8 +421,6 @@ h4 {
     font-size: .8rem;
     line-height: 1.1rem;
   }
-
- 
 
   .quote h4 {
     margin-top: 80px;
@@ -485,11 +446,5 @@ h4 {
 
   .box button {
     width: inherit;
-  }
-
-  .carousel-cell {
-    width: 100%;
-    margin: 5px;
-    padding-bottom: 30px;
   }
 }
