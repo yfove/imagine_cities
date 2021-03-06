@@ -25,3 +25,5 @@ def values(request):
 def our_indicators(request):
     return render (request, 'page/ourindicators.html', {})
 
+def fund_development(request):
+    return render (request, 'page/funddevelopment.html', {})
