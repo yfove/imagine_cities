@@ -77,9 +77,10 @@ $accent-colour: gray;
   text-align: center;
 }
 
-.post2 span {
-  font-weight: 600;
+.post2 a {
+  text-decoration: none;
   color: darkgray;
+  font-weight: 600;
 }
 
 .post3 {

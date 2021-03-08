@@ -4,22 +4,27 @@
 
 {% block content %}
 <main class="about-page">
+
+    <!-- About Us title -->
     <div class="mission-content">
         <h1>About Us</h1>
     </div>
+
+    <!-- Mission section -->
     <section class="aboutus about1">
         <article class="aboutus-text">
-            <!-- <div class="artboard1" data-aos="fade-right" data-aos-duration="1800"> -->
             <img src="{% static 'img/Artboard3.png'%}" alt="mission">
-            </div>
             <div class="mission-text" data-aos="fade-up" data-aos-duration="1800">
                 <h2>Mission</h2>
-                <p>We inform the public, inspire action, and act as a catalyst for creating collaborative solutions that
-                    guide
-                    cities through a rapidly urbanizing world.</p>
+                <p>
+                    We inform the public, inspire action, and act as a catalyst for creating collaborative solutions
+                    that guide cities through a rapidly urbanizing world.
+                </p>
             </div>
         </article>
     </section>
+
+    <!-- Vision section -->
     <section class="aboutus about2">
         <article class="aboutus-text vision">
             <div class="artboard2" data-aos="fade-right" data-aos-duration="1800">
@@ -27,14 +32,16 @@
             </div>
             <div class="mission-text" data-aos="fade-up" data-aos-duration="1800">
                 <h2>Vision</h2>
-                <p>We envision cities as vibrant inclusive spaces where engaged residents are informed and inspired to
+                <p>
+                    We envision cities as vibrant inclusive spaces where engaged residents are informed and inspired to
                     build smart urban solutions. These cities enable residents to contribute to the social fabric of
-                    their
-                    communities and foster opportunities, belonging and happiness.</h2>
+                    their communities and foster opportunities, belonging and happiness.
                 </p>
             </div>
         </article>
     </section>
+
+    <!-- Our Story section -->
     <section class="aboutus about3">
         <article class="aboutus-text story">
             <div class="artboard3" data-aos="fade-right" data-aos-duration="1800">
@@ -42,31 +49,41 @@
             </div>
             <div class="mission-text2" data-aos="fade-left" data-aos-duration="1800">
                 <h2>Our Story</h2>
-                <p>The way we choose to build our cities will be central to our ability to compete as we transition
+                <p>
+                    The way we choose to build our cities will be central to our ability to compete as we transition
                     through the 4th industrial period. With finite resources at our disposal, urban leaders are turning
                     to data and science to find the insight needed to make better investments that produce more
-                    significant systemic outcomes.</p>
-                <br>
+                    significant systemic outcomes.
+                </p>
 
                 <div class="paper-button">
                     <a href="https://medium.com/@ron.jaicarran/a-new-kind-of-organization-for-a-new-era-of-urbanism-17b24a681091"
                         target="_blank" class="white-paper"
                         style="color: orange; text-decoration: none; font-weight: bold;">
-                        <button type="button">Read
-                            More</button></a>
+                        <button type="button">
+                            Read More
+                        </button>
+                    </a>
                 </div>
             </div>
         </article>
     </section>
+
+    <!-- See What We've Been Up To (Our Work) section -->
     <section class="seeourwork">
         <div class="seeourwok">
             <h2>Take a look at our work and</h2>
 
-            <a href="{% url 'ourwork' %}" class="bn" data-aos="fade-down" data-aos-duration="1800">See What We've Been
-                Up To</a>
+            <a href="{% url 'ourwork' %}" class="bn" data-aos="fade-down" data-aos-duration="1800">
+                See What We've Been Up To
+            </a>
 
             <div class="about-button">
-                <a href="{% url 'ourwork' %}"><button type="button">Our Work</button></a>
+                <a href="{% url 'ourwork' %}">
+                    <button type="button">
+                        Our Work
+                    </button>
+                </a>
             </div>
         </div>
     </section>
