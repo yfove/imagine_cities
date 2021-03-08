@@ -2,12 +2,15 @@
 <!-- load the static folder -->
 {% load static %} {% block content %}
 <main class="join-page">
+
   <!-- main banner -->
   <div class="main-banner">
     <div class="main-banner-text box">
       <h3>Join Our Community</h3>
     </div>
   </div>
+
+  <!-- Sub banner -->
   <div class="quote2" data-aos="zoom-in" data-aos-duration="1800">
     <h5>
       We cannot do this work alone and we're always looking for great talent.
@@ -15,44 +18,58 @@
   </div>
 
   <section class="propellus-grid-main" data-aos="zoom-in" data-aos-duration="1800">
+
     <!-- join-grid -->
     <ul class="blog-grid">
+
+      <!-- Propellus logo (Left) -->
       <li class="post post1 box">
         <div class="propellus-logo">
           <img src="{% static 'img/propellus.png' %}" alt="img" />
         </div>
       </li>
+
+      <!-- Description section (Right)  -->
       <li class="post post2 box">
         <div class="propellus-text">
           <h3>
-            Becoming part of our team is a great way to apply your skills and
-            learn new skills in a very meaningful way. If you're interested in
-            joining our team, take a look at the opportunities available on
-            Propellus. If you have any questions, send them over to
-            <span>talent@imaginecities.com</span>
+            Becoming part of our team is a great way to apply your skills and learn new skills in a very meaningful way.
+            If you're interested in joining our team, take a look at the opportunities available on Propellus. If you
+            have any questions, send them over to
+            <br>
+            <a href="mailto:talent@imaginecities.com" rel="noopener" aria-label="Email">
+              talent@imaginecities.com
+            </a>
           </h3>
         </div>
       </li>
+
+      <!-- Get Involved button (Left) -->
       <li class="post post3 box" data-aos="zoom-in" data-aos-duration="1800">
         <div class="button">
-          <a href="https://www.volunteerconnector.org/calgary/imagine-cities" target="_blank"><button type="button">Get
-              Involved</button></a>
+          <a href="https://www.volunteerconnector.org/calgary/imagine-cities" target="_blank">
+            <button type="button">
+              Get Involved
+            </button>
+          </a>
         </div>
       </li>
     </ul>
-    <!-- blog grid ends -->
   </section>
+
+  <!-- Make A Difference center image  -->
   <div class="bottom-img" data-aos="zoom-in" data-aos-duration="1800">
     <img src="{% static 'img/1-a.png' %}" alt="" />
   </div>
+
+  <!-- Testimonial section  -->
   <div class="testimony">
-    <p class="involved-quote">"I love how Imagine Cities works to understand real world implications of
-      city-building. They
-      dissect urban
+    <p class="involved-quote">
+      "I love how Imagine Cities works to understand real world implications of city-building. They dissect urban
       issues beyond its face value and provide possible solutions. Volunteering with Imagine Cities also alleviated some
       of the stress associated with my post-graduation job search. The organization helped to develop my skill set,
       providing me with tools to grow as a professional and become a more attractive candidate when applying to jobs."
-      <br /><br />
+      <br><br>
       -Sesvin Josarasa
     </p>
   </div>

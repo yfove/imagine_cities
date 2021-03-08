@@ -69,9 +69,10 @@
   text-align: center;
 }
 
-.post2 span {
-  font-weight: 600;
+.post2 a {
+  text-decoration: none;
   color: darkgray;
+  font-weight: 600;
 }
 
 .post3 {
@@ -1015,6 +1016,12 @@ template {
 
 .contact-us .meet h2 {
   color: #13a7a5;
+}
+
+.contact-email {
+  text-decoration: none;
+  color: darkgray;
+  font-weight: 600;
 }
 
 .our-work-page .main-banner {

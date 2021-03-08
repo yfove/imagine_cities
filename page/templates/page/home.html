@@ -5,95 +5,109 @@
 {% block content %}
 <!-- homepage -->
 <main class="home">
+
     <!-- main banner -->
     <div class="main-banner">
         <div class="main-banner-text mainbox">
             <h3>We Are All City Makers</h3>
             <h4>Join the movement</h4>
             <div class="learn-more" data-aos="fade-up" data-aos-duration="2400">
-                <a href="{% url 'about' %}"><button>learn more</button></a>
+                <a href="{% url 'about' %}">
+                    <button>learn more</button>
+                </a>
             </div>
         </div>
     </div>
-    <div class="ribbon">
-        <!-- <p>Informing the public</p> -->
-    </div>
+
     <!-- featured posts -->
     <section class="featured-posts" id="move">
         <h2>OUR PROGRAMS</h2>
+
+        <!-- Carousel section -->
         <div class="carousel" data-flickity='{"autoPlay": true }'>
+
+            <!-- Research Program carousel item -->
             <div class="carousel-cell c1" data-aos="zoom-in" data-aos-duration="800">
                 <div class="post-content">
-
-                    <h3>Research Program
-                    </h3>
-                    <p>Guided by our indicators and supported by systems thinking, we collect and share cities research
+                    <h3>Research Program</h3>
+                    <p>
+                        Guided by our indicators and supported by systems thinking, we collect and share cities research
                         from around the world in an effort to more fully understand the challenges and opportunities
                         facing cities. We take a deeper dive into these topics through our webcast productions by
-                        inviting global leaders actively reshaping urban life.</p>
-                    <a href="{% url 'ourwork' %}"><button>LEARN
-                            MORE</button></a>
+                        inviting global leaders actively reshaping urban life.
+                    </p>
+                    <a href="{% url 'ourwork' %}">
+                        <button>LEARN MORE</button>
+                    </a>
                 </div>
             </div>
-            <!-- <div class="carousel-cell c2" data-aos="zoom-in" data-aos-duration="800">
-                <div class="post-content">
-                    <h3>Innovation Program
-                    </h3>
-                    <p>Through our research collection, we have been fortunate to come across thousands of innovators in
-                        government, communities and the private sector working to solve challenging urban problems
-                        across our indicators. This program brings together some of the most innovative solutions in an
-                        effort to inspire communities to create solutions of their own.</p>
-                    <a href="https://getpocket.com/@imaginecities">learn more</a>
-                </div>
-            </div> -->
+
+            <!-- Capacity Building Program carousel item -->
             <div class="carousel-cell c3" data-aos="zoom-in" data-aos-duration="800">
                 <div class="post-content">
                     <h3>Capacity Building Program</h3>
-                    <p>Since the late 1980s, humanity has witnessed rates of innovation never seen before in history. As
+                    <p>
+                        Since the late 1980s, humanity has witnessed rates of innovation never seen before in history. As
                         we progress into the 4th industrial revolution, innovation will continue to transform cities. We
                         bring together digital content that will not only give you the skills needed to make sense of a
                         comnplex world, but also provide you with the tools to effectively respond in an effort to
-                        improve urban life. </p>
-                    <a href="{% url 'ourwork' %}"><button>LEARN
-                            MORE</button></a>
+                        improve urban life.
+                    </p>
+                    <a href="{% url 'ourwork' %}">
+                        <button>LEARN MORE</button>
+                    </a>
                 </div>
             </div>
-        </div>
-
-    </section><!-- featured posts end -->
-
-    <section class="quote" class="post-content" data-aos="fade-in" data-aos-duration="500">
-        <div class="wrapper">
-            <h4>Informing the public and <br> inspiring action <br> through collaborative research</h4>
         </div>
     </section>
-    <section class="newsletter" class="post-content" data-aos="fade-up" data-aos-duration="800">
-        <h3>Quick Links</h2>
-            <div class="wrapper">
-                <div class="newsletter-grid-main box">
-                    <div class="volunteer box">
-                        <h2>What We Do</h2>
-                        <ul>
-                            <a href="{% url 'ourwork' %}" target="_blank"><button>Our Work</button></a>
-                        </ul>
-                    </div>
-                    <div class="community box">
-                        <h2>Join Us</h2>
-                        <ul>
-                            <a href="https://www.volunteerconnector.org/calgary/imagine-cities"
-                                target="_blank"><button>Propellus</button></a>
-                        </ul>
-                    </div>
-                    <div class="eventbrite box">
-                        <h2>See Our Events</h2>
-                        <ul>
-                            <a href="https://www.showpass.com/o/imagine-cities/"
-                                target="_blank"><button>SHOWPASS</button></a>
 
-                        </ul>
-                    </div>
+    <!-- Main quote -->
+    <section class="quote" class="post-content" data-aos="fade-in" data-aos-duration="500">
+        <div class="wrapper">
+            <h4>
+                Informing the public and inspiring action through collaborative research
+            </h4>
+        </div>
+    </section>
+
+    <!-- Quick Links section -->
+    <section class="newsletter" class="post-content" data-aos="fade-up" data-aos-duration="800">
+        <h3>QUICK LINKS</h3>
+
+        <div class="wrapper">
+            <div class="newsletter-grid-main box">
+
+                <!-- What We Do (Our Work) section -->
+                <div class="volunteer box">
+                    <h2>What We Do</h2>
+                    <ul>
+                        <a href="{% url 'ourwork' %}" target="_blank">
+                            <button>Our Work</button>
+                        </a>
+                    </ul>
+                </div>
+
+                <!-- Join Us (Propellus) section -->
+                <div class="community box">
+                    <h2>Join Us</h2>
+                    <ul>
+                        <a href="https://www.volunteerconnector.org/calgary/imagine-cities" target="_blank">
+                            <button>Propellus</button>
+                        </a>
+                    </ul>
+                </div>
+
+                <!-- See Our Events (Showpass) section -->
+                <div class="eventbrite box">
+                    <h2>See Our Events</h2>
+                    <ul>
+                        <a href="https://www.showpass.com/o/imagine-cities/" target="_blank">
+                            <button>SHOWPASS</button>
+                        </a>
+                    </ul>
                 </div>
             </div>
+        </div>
     </section>
 
 </main>
