@@ -22,8 +22,8 @@ def our_team(request):
 def values(request):
     return render (request, 'page/values.html', {})
 
-def our_indicators(request):
-    return render (request, 'page/ourindicators.html', {})
+def white_paper(request):
+    return render (request, 'page/whitepaper.html', {})
 
 def fund_development(request):
     return render (request, 'page/funddevelopment.html', {})
