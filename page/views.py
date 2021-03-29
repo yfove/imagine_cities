@@ -10,7 +10,7 @@ def about(request):
 def our_work(request):
     return render (request, 'page/ourwork.html', {})
 
-def get_involved(request):
+def support_us(request):
     return render (request, 'page/getinvolved.html', {})
 
 def contact_us(request):
