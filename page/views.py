@@ -25,3 +25,5 @@ def values(request):
 def white_paper(request):
     return render (request, 'page/whitepaper.html', {})
 
+def fund_development(request):
+    return render (request, 'page/funddevelopment.html', {})
